@@ -15,10 +15,12 @@ export default class extends React.Component {
         <h1>This is my work.</h1>
         {
           this.props.projects.map( (project, i) => (
-            <Project title={ project.name }>
-              <div>{ project.date }</div>
-              <div>{ project.technologies }</div>
-              <div>{ project.description }</div>
+            <Project
+              title={ project.name }
+              image={ project.image }
+              date={ project.date }
+              technologies={ project.technologies }
+              description={ project.description } >
             </Project>
           ))
         }

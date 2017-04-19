@@ -1,18 +1,18 @@
-export default ({ title, children }) => (
-  <div className='main'>
-    <h1>{ title }</h1>
-    { children }
+export default ({ title, image, date, technologies, description }) => (
+  <div className='main pure-g'>
+    <div className='pure-u-1-6'></div>
+    <div className='pure-u-2-3'>
+    <h2>{ title }</h2>
+    <img src={ image } className='pure-img' />
+    <div>{ date }</div>
+    <div>{ technologies }</div>
+    <div>{ description }</div>
+    </div>
+    <div className='pure-u-1-6'></div>
     <style jsx>{`
-      .main {
-        font: 15px Helvetica, Arial;
-        border: 1px solid #eee;
-        padding: 0 10px;
-      }
-
-      h1 {
-        font-size: 16px;
-        font-weight: bold;
-        margin: 10px 0;
+      .pure-img {
+        float: left;
+        margin-right: 2em;
       }
     `}</style>
   </div>
