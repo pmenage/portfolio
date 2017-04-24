@@ -12,7 +12,7 @@ export default class extends React.Component {
 
   render () {
     return (
-      <Layout title="Project">
+      <Layout title="Work">
         <H1 title="― Some of my projects ―"></H1>
         {
           this.props.projects.map( (project, i) => (

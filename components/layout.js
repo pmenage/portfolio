@@ -9,8 +9,14 @@ export default ({ children, title = 'Home' }) => (
       <title>{ title }</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC|Lato|Raleway" />
       <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous" />
       <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" />
+      <style>{`
+        body {
+          background-color: #ddd;
+        }
+      `}</style>
     </Head>
 
     <header>
@@ -19,7 +25,7 @@ export default ({ children, title = 'Home' }) => (
           <Link href='/'><a  className='pure-menu-heading pure-menu-link'>Pauline Ménage</a></Link>
           <ul className='pure-menu-list'>
             <li className='pure-menu-item'><Link href='/'><a className='pure-menu-link menu-link'>Home</a></Link></li>
-            <li className='pure-menu-list'><Link href='/work'><a className='pure-menu-link menu-link'>Work</a></Link></li>
+            <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
             <li className='pure-menu-list'><Link href='/contact'><a className='pure-menu-link menu-link'>Contact</a></Link></li>
           </ul>
         </div>
@@ -27,7 +33,6 @@ export default ({ children, title = 'Home' }) => (
           .pure-menu {
             background-color: #fff;
             height: 7em;
-            border-bottom: 2px solid #ddd;
           }
           .pure-menu-heading {
             margin-right: 8em;
