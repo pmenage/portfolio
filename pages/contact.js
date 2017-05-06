@@ -8,7 +8,7 @@ export default () => (
     <div className='pure-g'>
 
       <div className='pure-u-md-1-2'>
-        <div className='right'>
+        <div className='left'>
           <h2>About me</h2>
           <p>Hello, I am Pauline, a software engineering student completing my fourth year at Bordeaux Graduate School, in Computer Science. I am passionate about computer science, and I spend most of my free time coding or reading about new technologies.</p>
           <p>As president of a student organization in 2016-2017, I learned how to manage a team, and take responsibility for my actions and decisions.</p>
@@ -19,19 +19,19 @@ export default () => (
       <div className='pure-u-md-1-2'>
         <div className='right'>
           <h2>Send me a message</h2>
-          <form className="pure-form pure-form-aligned">
+          <form className='pure-form pure-form-aligned' action='/contactProcess' method='post'>
             <fieldset>
               <div className='pure-control-group'>
-                <label for='name'>Name</label>
-                <input id='name' type='text' placeholder='Name' />
+                <label htmlFor='name'>Name</label>
+                <input id='name' name='name' type='text' placeholder='Name' />
               </div>
               <div className="pure-control-group">
-                <label for="email">Email Address</label>
-                <input id="email" type="email" placeholder="Email Address" />
+                <label htmlFor="email">Email Address</label>
+                <input id="email" name='email' type="email" placeholder="Email Address" />
               </div>
               <div className='pure-control-group'>
-                <label for='message'>Message</label>
-                <textarea id='message' rows='10' cols='23' placeholder='Write your message here' />
+                <label htmlFor='message'>Message</label>
+                <textarea id='message' name='message' rows='10' cols='23' placeholder='Write your message here' />
               </div>
               <button type='submit' className='pure-button pure-button-primary'>Submit</button>
             </fieldset>
@@ -41,10 +41,12 @@ export default () => (
 
       <style jsx>{`
         .left {
-          padding: 1em;
+          padding-left: 5em;
+          padding-right: 5em;
         }
         .right {
-          padding: 1em;
+          padding-left: 3em;
+          padding-right: 3em;
         }
         h2 {
           font-family: Raleway;
