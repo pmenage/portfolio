@@ -14,7 +14,7 @@ export default ({ children, title = 'Home' }) => (
       <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" />
       <style>{`
         body {
-          background-color: #ddd;
+          background-color: #16a085;
         }
       `}</style>
     </Head>
@@ -26,7 +26,7 @@ export default ({ children, title = 'Home' }) => (
           <ul className='pure-menu-list'>
             <li className='pure-menu-item'><Link href='/'><a className='pure-menu-link menu-link'>Home</a></Link></li>
             <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
-            <li className='pure-menu-list'><Link href='/contact'><a className='pure-menu-link menu-link'>Contact</a></Link></li>
+            <li className='pure-menu-list'><Link href='/contact' as='/contact'><a className='pure-menu-link menu-link'>Contact</a></Link></li>
           </ul>
         </div>
         <style jsx>{`
