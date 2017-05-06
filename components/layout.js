@@ -67,7 +67,28 @@ export default ({ children, title = 'Home' }) => (
     { children }
 
     <footer>
-      This is a footer.
+      <div className="pure-g">
+        <div className="pure-u-1 footer">
+          <span><Link href='/'><a className='link'>Home</a></Link></span>
+          <span><Link href='/projects'><a className='link'>Work</a></Link></span>
+          <span><Link href='/contact' as='/contact'><a className='link'>Contact</a></Link></span>
+        </div>
+        <style jsx>{`
+          .footer {
+            background-color: #34495e;
+            margin-top: 2em;
+            padding: 2em;
+            text-align: center;
+          }
+          span {
+            margin-right: 2em;
+          }
+          .link {
+            text-decoration: none;
+            color: #fff;
+          }
+        `}</style>
+      </div>
     </footer>
 
   </div>

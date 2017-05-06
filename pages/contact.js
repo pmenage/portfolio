@@ -40,6 +40,9 @@ export default () => (
       </div>
 
       <style jsx>{`
+        .pure-g {
+          margin-bottom: 3em;
+        }
         .left {
           line-height: 1.5em;
           margin-left: 4em;
