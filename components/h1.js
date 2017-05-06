@@ -5,10 +5,10 @@ export default ({ title }) => (
       h1 {
         font-family: Raleway;
         font-size: 50px;
-        font-weight: 300;
+        font-weight: 600;
         text-align: center;
         margin: 1em;
-        color: #34495e;
+        color: #fff;
       }
     `}</style>
   </div>
