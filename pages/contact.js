@@ -3,11 +3,11 @@ import H1 from '../components/h1'
 
 export default () => (
   <Layout title="Contact">
-    <H1 title="― About ―"></H1>
+    <H1 title="About"></H1>
 
     <div className='pure-g'>
 
-      <div className='pure-u-md-1-2'>
+      <div className='pure-u-sm-1 pure-u-md-1-2'>
         <div className='left'>
           <h2>About me</h2>
           <p>Hello, I am Pauline, a software engineering student completing my fourth year at Bordeaux Graduate School, in Computer Science. I am passionate about computer science, and I spend most of my free time coding or reading about new technologies.</p>
@@ -16,7 +16,7 @@ export default () => (
         </div>
       </div>
 
-      <div className='pure-u-md-1-2'>
+      <div className='pure-u-sm-1 pure-u-md-1-2'>
         <div className='right'>
           <h2>Send me a message</h2>
           <form className='pure-form pure-form-aligned' action='/contactProcess' method='post'>
@@ -41,18 +41,32 @@ export default () => (
 
       <style jsx>{`
         .left {
-          padding-left: 5em;
-          padding-right: 5em;
+          line-height: 1.5em;
+          margin-left: 4em;
+          margin-right: 4em;
+          padding: 1em 4em 2em 4em;
+          border-radius: 1em;
+          background-color: #fff;
+          color: #2c3e50;
         }
         .right {
-          padding-left: 3em;
-          padding-right: 3em;
+          margin-left: 4em;
+          color: #fff;
+          background-color: none;
+        }
+        .right button {
+          margin-left: 11em;
+          background-color: #fff;
+          color: #2c3e50;
         }
         h2 {
           font-family: Raleway;
           font-size: 30px;
           font-weight: 200;
           color: #16a085;
+        }
+        .right h2 {
+          color: #fff;
         }
       `}</style>
 
