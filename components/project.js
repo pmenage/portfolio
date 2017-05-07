@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from  '../routes'
 
 export default ({ title, image, page, technologies, description, github }) => (
   <div className='main pure-g'>
@@ -6,7 +6,11 @@ export default ({ title, image, page, technologies, description, github }) => (
     <div className='pure-u-2-3'>
       <img src={ image } className='pure-img' />
       <div className="gray-on-hover">
-        <div className="view"><span className='view-more'><Link href={ page }><a>View more</a></Link></span></div>
+        <div className="view">
+          <span className='view-more'>
+            <Link route='work' params={{ slug: page }}><a>View more</a></Link>
+          </span>
+        </div>
       </div>
       <div className="description">
         <span className="title">{ title }</span>
@@ -73,7 +77,6 @@ export default ({ title, image, page, technologies, description, github }) => (
         font-size: 30px;
         font-weight: 700;
         color: #2c3e50;
-        
       }
       div {
         color: #34495e;
