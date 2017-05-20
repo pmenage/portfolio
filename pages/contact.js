@@ -1,14 +1,13 @@
 import Layout from '../components/layout'
-import H1 from '../components/h1'
 
 export default () => (
   <Layout title="Contact">
-    <H1 title="About"></H1>
+    <h1>About</h1>
 
     <div className='pure-g'>
 
       <div className='pure-u-sm-1 pure-u-md-1-2'>
-        <div className='left'>
+        <div className='about'>
           <h2>About me</h2>
           <p>Hello, I am Pauline, a software engineering student completing my fourth year at Bordeaux Graduate School, in Computer Science. I am passionate about computer science, and I spend most of my free time coding or reading about new technologies.</p>
           <p>As president of a student organization in 2016-2017, I learned how to manage a team, and take responsibility for my actions and decisions.</p>
@@ -17,7 +16,7 @@ export default () => (
       </div>
 
       <div className='pure-u-sm-1 pure-u-md-1-2'>
-        <div className='right'>
+        <div className='contact-form'>
           <h2>Send me a message</h2>
           <form className='pure-form pure-form-aligned' action='/contactProcess' method='post'>
             <fieldset>
@@ -43,7 +42,7 @@ export default () => (
         .pure-g {
           margin-bottom: 3em;
         }
-        .left {
+        .about {
           line-height: 1.5em;
           margin-left: 4em;
           margin-right: 4em;
@@ -52,15 +51,18 @@ export default () => (
           background-color: #fff;
           color: #2c3e50;
         }
-        .right {
+        .contact-form {
           margin-left: 4em;
           color: #fff;
           background-color: none;
         }
-        .right button {
+        .contact-form button {
           margin-left: 11em;
           background-color: #fff;
           color: #2c3e50;
+        }
+        .contact-form h2 {
+          color: #fff;
         }
         h2 {
           font-family: Raleway;
@@ -68,11 +70,9 @@ export default () => (
           font-weight: 200;
           color: #16a085;
         }
-        .right h2 {
-          color: #fff;
-        }
       `}</style>
 
     </div>
+
   </Layout>
 )

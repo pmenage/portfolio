@@ -16,6 +16,14 @@ export default ({ children, title = 'Home' }) => (
         body {
           background-color: #16a085;
         }
+        h1 {
+          font-family: Raleway;
+          font-size: 48px;
+          font-weight: 500;
+          text-align: center;
+          margin: 1.1em;
+          color: #fff;
+        }
       `}</style>
     </Head>
 

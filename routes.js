@@ -1,4 +1,5 @@
 const nextRoutes = require('next-routes')
 const routes = module.exports = nextRoutes()
 
-routes.add('work', '/work/:slug')
+routes.add('project', '/projects/:slug', 'project')
+//routes.add('projects', '/projects/:slug', 'project')

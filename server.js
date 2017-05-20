@@ -6,7 +6,6 @@ const routes = require('./routes')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
-const handle = app.getRequestHandler()
 const handler = routes.getRequestHandler(app)
 
 app.prepare()
@@ -32,7 +31,7 @@ app.prepare()
   })
 
   server.get('*', (req, res) => {
-    return handle(req, res)
+    return handler(req, res)
   })
 
   server.use(handler).listen(3000, (err) => {
