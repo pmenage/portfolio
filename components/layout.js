@@ -30,9 +30,8 @@ export default ({ children, title = 'Home' }) => (
     <header>
       <nav>
         <div className='pure-menu pure-menu-horizontal'>
-          <Link href='/'><a  className='pure-menu-heading pure-menu-link'>Pauline Ménage</a></Link>
           <ul className='pure-menu-list'>
-            <li className='pure-menu-item'><Link href='/'><a className='pure-menu-link menu-link'>Home</a></Link></li>
+            <li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Home</a></Link></li>
             <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
             <li className='pure-menu-list'><Link href='/contact' as='/contact'><a className='pure-menu-link menu-link'>Contact</a></Link></li>
           </ul>
@@ -40,25 +39,20 @@ export default ({ children, title = 'Home' }) => (
         <style jsx>{`
           .pure-menu {
             background-color: #fff;
-            height: 7em;
-          }
-          .pure-menu-heading {
-            margin-right: 8em;
-            font-size: 52px;
-            margin-top: 0;
-            padding-top: 0;
+            height: 5em;
+            text-align: center;
           }
           .pure-menu-link {
+            font-size: 20px;
             display: inline;
-            margin-top: .5em;
             color: #34495e;
+          }
+          .pure-menu-list {
+            padding-top: 0.8em;
           }
           .pure-menu-link:hover {
             background: none;
             color: #16a085;
-          }
-          .menu-link {
-            margin-top: 2em;
           }
           .menu-link:hover::after {
             content:"―";
