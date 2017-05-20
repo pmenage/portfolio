@@ -5,96 +5,149 @@ import { Link } from  '../routes'
 
 const Project = ({ title, image, slug, technologies, description, github }) => (
   <div className='main pure-g'>
-    <div className='pure-u-1-6'></div>
-    <div className='pure-u-2-3'>
-      <img src={ image } className='pure-img' />
-      <div className="gray-on-hover">
-        <div className="view">
+    <div className='pure-u-1 project-column'>
+      <div className='project'>
+        <img src={ image } className='pure-img' />
+        <div className="description">
+          <span className="title">{ title }</span>
           <span className='view-more'>
             <Link route='project' params={{ slug }}><a>View more</a></Link>
           </span>
+          <div className="tech">
+          {
+            technologies.map( (tech, i) => (
+              <span className="technology">{ tech }</span>
+            ))
+          }
+          </div>
         </div>
       </div>
-      <div className="description">
-        <span className="title">{ title }</span>
-        <span className="tech">
-        {
-          technologies.map( (tech, i) => (
-            <span className="technology">{ tech }</span>
-          ))
-        }
-        </span>
+      <div className='view-more-mobile'>
+        <Link route='project' params={{ slug }}><a>View more</a></Link>
       </div>
     </div>
-    <div className='pure-u-1-6'></div>
     <style jsx>{`
-      .pure-u-2-3 {
-        margin-bottom: 5em;
+      .project {
+        margin: .7em;
         box-shadow: 0 0 .5em #1abc9c;
         position: relative;
       }
-      .gray-on-hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 1.5em;
-        background-color: none;
+      .project-column {
         text-align: center;
       }
-      .view {
-        position: relative;
-        top: 45%
-      }
       .view-more {
-        padding: 1.2em 2.3em 1.2em 2.3em;
-        border-radius: .5em;
-        background-color: #1abc9c;
-        opacity: 0;
+        display: none;
       }
-      .view-more > a {
+      .view-more-mobile {
+        margin: 1.9em 0 1.3em 0;
+      }
+      .view-more-mobile a {
+        color: #fff;
         text-decoration: none;
-        font-family: Raleway;
-        color: #2c3e50;
-        font-size: 18px;
-        font-weight: 700;
-      }
-      .gray-on-hover:hover {
-        background-color: rgba(52, 73, 94, 0.7);
-        -webkit-transition: .5s ease-in-out;
-      }
-      .gray-on-hover:hover .view-more {
-        opacity: 1;
-        -webkit-transition: 1s ease-in-out;
+        border: solid #fff .1em;
+        padding: .7em;
       }
       .description {
         position: absolute;
         left: 0;
         bottom: 0;
         right: 0;
-        padding: 1.5em;
-        background-color: #bdc3c7;
+        padding: .5em;
+        background-color: #ecf0f1;
       }
       .title {
         font-family: Raleway;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 700;
         color: #2c3e50;
+        margin-bottom: .2em;
+      }
+      .technology {
+        color: #16a085;
+      }
+      .technology:after {
+        content:" / ";
+      }
+      .technology:last-child:after {
+        content:"";
       }
       div {
         color: #34495e;
       }
-      .tech {
-        margin-top: .5em;
-        float: right;
-        margin-bottom: 0;
+      
+      @media only screen and (min-width: 700px) {
+        .project {
+          margin: 1em 7em 2em 7em;
+        }
+        .project-column {
+          text-align: left;
+        }
+        .view-more-mobile {
+          display: none;
+        }
+        .view-more {
+          display: inline;
+          float: right;
+          margin-top: .9em;
+          margin-right: 1em;
+        }
+        .view-more > a {
+          text-decoration: none;
+          font-family: Raleway;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+          background-color: #16a085;
+          padding: .7em 1.5em .7em 1.5em;
+          border-radius: .8em;
+        }
       }
-      .technology {
-        margin-bottom: 0;
-        padding: .4em;
-        border-radius: .5em;
-        margin-right: 1em;
-        background-color: #fff;
+
+      @media only screen and (min-width: 1110px) {
+        .project {
+          margin: 1em 15em 3em 15em;
+        }
+        .project-column {
+          text-align: left;
+        }
+        .description {
+          padding: 1.1em;
+        }
+        .title {
+          font-size: 26px;
+          padding-bottom: .3em;
+        }
+        .view-more-mobile {
+          display: none;
+        }
+        .view-more {
+          display: inline;
+          float: right;
+          margin-top: 1.3em;
+          margin-right: 1em;
+        }
+        .view-more > a {
+          text-decoration: none;
+          font-family: Raleway;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+          background-color: #16a085;
+          padding: 1em 2em 1em 2em;
+          border-radius: 1em;
+        }
+        .tech {
+          margin-top: .8em;
+        }
+        .technology {
+          padding: .3em .4em .3em .4em;
+          border-radius: .5em;
+          margin-right: 1em;
+          background-color: #fff;
+        }
+        .technology:after {
+          content:"";
+        }
       }
     `}</style>
   </div>
@@ -104,7 +157,7 @@ const Project = ({ title, image, slug, technologies, description, github }) => (
 const Projects = () => (
   <Layout title="Work">
 
-    <h1>Some of my projects</h1>
+    <h1>My projects</h1>
     {
       projects.map( (project, i) => (
         <Project

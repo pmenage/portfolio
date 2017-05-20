@@ -32,7 +32,7 @@ export default () => (
                 <label htmlFor='message'>Message</label>
                 <textarea id='message' name='message' rows='10' cols='23' placeholder='Write your message here' />
               </div>
-              <button type='submit' className='pure-button pure-button-primary'>Submit</button>
+              <button type='submit' className='pure-button pure-button-primary'>Send</button>
             </fieldset>
           </form>
         </div>
@@ -43,23 +43,26 @@ export default () => (
           margin-bottom: 3em;
         }
         .about {
+          letter-spacing: normal;
           line-height: 1.5em;
-          margin-left: 4em;
-          margin-right: 4em;
-          padding: 1em 4em 2em 4em;
+          margin-left: 1em;
+          margin-right: 1em;
+          padding: .8em;
           border-radius: 1em;
           background-color: #fff;
           color: #2c3e50;
         }
         .contact-form {
-          margin-left: 4em;
+          letter-spacing: normal;
+          margin-left: 1em;
           color: #fff;
           background-color: none;
         }
         .contact-form button {
-          margin-left: 11em;
-          background-color: #fff;
-          color: #2c3e50;
+          margin-left: 1em;
+          background-color: #16a085;
+          color: #fff;
+          border: solid #fff .1em;
         }
         .contact-form h2 {
           color: #fff;
@@ -69,6 +72,26 @@ export default () => (
           font-size: 30px;
           font-weight: 200;
           color: #16a085;
+        }
+        @media only screen and (min-width: 768px) {
+          .about {
+            line-height: 1.5em;
+            margin-left: 4em;
+            margin-right: 4em;
+            padding: 1em 4em 2em 4em;
+            border-radius: 1em;
+            background-color: #fff;
+            color: #2c3e50;
+          }
+          .contact-form {
+            letter-spacing: normal;
+            margin-left: 4em;
+            color: #fff;
+            background-color: none;
+          }
+          .contact-form button {
+            margin-left: 11em;
+          }
         }
       `}</style>
 
