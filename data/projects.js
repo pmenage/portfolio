@@ -3,7 +3,7 @@ const projects = [
     "name": "Website for AEI",
     "image": "/static/AEI.png",
     "slug": "aei",
-    "technologies": ["WordPress", "Bootstrap", "PHP", "HTML", "CSS"],
+    "technologies": ["WordPress", "Bootstrap", "PHP"],
     "description": "This website was created for the student organization of which I was president.<br> I had felt the need to redesign the website to better promote our work. The goal was to create a simple website, easily maintainable by all collaborators. I created a custom theme, to make the website unique. Special care was taken to optimize navigation throughout the website to increase the amount of leads collected through it.",
     "github": "https://github/pmenage/aei-website"
   },
