@@ -39,7 +39,7 @@ export default ({ children, title = 'Home' }) => (
         <style jsx>{`
           .pure-menu {
             background-color: #fff;
-            height: 5em;
+            height: 6em;
             text-align: center;
           }
           .pure-menu-link {
@@ -48,7 +48,7 @@ export default ({ children, title = 'Home' }) => (
             color: #34495e;
           }
           .pure-menu-list {
-            padding-top: 0.8em;
+            padding-top: 1.1em;
           }
           .pure-menu-link:hover {
             background: none;
@@ -59,7 +59,7 @@ export default ({ children, title = 'Home' }) => (
             position:absolute;
             left: 40%;
             right: 40%;
-            top: 1.5em;
+            top: 2em;
             bottom:0;
           }
         `}</style>
