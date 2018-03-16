@@ -170,257 +170,254 @@ export default () => (
                     pauline.menage26@gmail.com
                 </div>
             </div>               
-          
           </div>
-      
         </div>
-
       </div>
-      <style jsx>{`
-        .body {
-            font-family: Roboto;
-            font-size: 12pt;
-            line-height: 1.9;
-            /*color: #13131A; */
-            color: #2c3e50;
-            padding: 1em;
-            -webkit-print-color-adjust: exact;
-        }
-        
-        #title {
-            padding: 1em 1em;
-            text-align: center;
-            /*border-bottom: solid 3px #16a085;*/
-        }
-        
-        .exp ul {
-            margin-top: 5px;
-        }
-        
-        h1 {
-            font-size: 3em;
-            font-weight: 300;
-            margin-bottom: 0px;
-            margin-top: 0px;
-            line-height: 1.2;
-        }
-        
-        .titlecontact {
-            margin-top: 15px;
-            line-height: 1.7;
-        }
-        
-        #titlecontactleft, #titlecontactright {
-            display: none;
-        }
-        
-        .titletop {
-            margin-top: 25px;
-            margin-bottom: 25px;
-            font-size: 1.3em;
-            line-height: 1.6;
-            /*color:  #c0392b;*/
-        }
-        
-        h2 {
-            font-family: 'Roboto Slab';
-            font-size: 25px;
-            letter-spacing: .05cm;
-            font-weight: 500;
-            /*color: #2980b9;*/
-            color: #2980b9;
-        }
-        
-        .formation {
-            margin-bottom: 10px;
-        }
-        
-        .date {
-            font-weight: 200;
-            font-size: 11pt;
-        }
-        
-        .ecole {
-            font-weight: 700;
-        }
-        
-        .experience {
-            font-weight: 700;
-        }
-        
-        .exp {
-            margin-bottom: 10px;
-        }
-        
-        span {
-            display: inline-block;
-            margin-right: 4px;
-        }
-        
-        li {
-            list-style-type: square;
-        }
-        
-        .info {
-            padding-right: 20px;
-        }
-        
-        .space {
-            margin-top: 26px;
-        }
-        
-        .leftlang {
-            font-weight: bold;
-        }
-        
-        .space .info {
-            clear: both;
-            margin-top: 5px;
-        }
-        
-        h1 {
-            color: #2980b9;
-            /*text-shadow: 0 0 5pt #2ecc71;*/
-        }
-        
-        h2::after {
-            content: ' ';
-            display: block;
-            height: 1px;
-            background-image: linear-gradient(90deg, #2980b9, white);
-        }
-        
-        @media screen {
-        a, a:visited, a:hover {
-            color: #6E8A8D !important;
-            text-decoration: none;
-            border-bottom: 1pt dotted #6E8A8D;
-        }
-        }
-        
-        @media print {
-            a, a:visited, a:hover {
-                text-decoration: none;
-                color: #2c3e50;
-            }
-            .atitle {
-                color: #c0392b;
-            }
-            #left {
-                line-height: 1.62;
-            }
-            #right {
-                line-height: 1.84;
-            }
-            .space .info {
-                margin-top: 5px;
-            }
-        }
-        
-        h1 {
-            font-family: 'Roboto Slab', serif;
-            letter-spacing: .05cm;
-        }
-        
-        .leftinfo, .leftlang, .ecole, .experience {
-            font-family: 'Lato';
-            /*color: #6CA0B8;*/
-            color: #c0392b;
-            font-size: 110%;
-            font-weight: 500;
-        }
-        
-        #cherche {
-            font-family: 'Roboto';
-            font-size: 18px;
-            background-color: #16a085;
-            color: white;
-            padding: .5em;
-            /*letter-spacing: 0.03cm;*/
-            word-spacing: .2em;
-            font-weight: 500;
-            text-align: center;
-        /*    text-transform: uppercase; */
-            border-radius: .3em;
-        }
-        
-        @page {
-            size: A4;
-            margin: 1cm;
-        }
-        
-        @media (min-width: 900px) {
-            .info {
-                margin-top: 0px;
-            }
-            #right {
-                line-height: 2.1;
-            }
-            #left {
-                line-height: 2.0;
-            }
-        }
-        
-        @media print, (min-width: 900px) {
-        
-        #page_wrap, #title {
-            width: 900px;
-            margin: 0 auto;
-        }
-        
-        #left {
-            float: left;
-            width: 42%;
-            padding-left: 0px;
-            padding-right: 0px;
-            box-sizing: border-box;
-        }
-        
-        #right { 
-            float: right;
-            width: 58%;
-            padding-left: 30px;
-            padding-right: 0px;
-            box-sizing: border-box;
-        }
-        
-        #contact {
-            display: none;
-        }
-        
-        #titlecontactleft, #titlecontactright {
-            margin-top: 1.5em;
-            display: inline;
-            font-size: 11pt;
-            line-height: 1.7;
-            color: #7f8c8d;
-        }
-        
-        #titlecontactleft {
-            float: left;
-            text-align: left;
-        }
-        
-        #titlecontactright {
-            float: right;
-            text-align: right;
-        }
-        
-        .web {
-            display: block;
-        }
-        /*
-        #right {
-            border-left: 1pt solid #16a085;;
-        }
-        
-        #title {
-            border-bottom: 1pt solid #16a085;;
-        }
-        */
-        }
-      `}</style>
     </div>
-
+    <style jsx>{`
+    .body {
+        font-family: Roboto;
+        font-size: 12pt;
+        line-height: 1.9;
+        /*color: #13131A; */
+        color: #2c3e50;
+        padding: 1em;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    #title {
+        padding: 1em 1em;
+        text-align: center;
+        /*border-bottom: solid 3px #16a085;*/
+    }
+    
+    .exp ul {
+        margin-top: 5px;
+    }
+    
+    h1 {
+        font-size: 3em;
+        font-weight: 300;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        line-height: 1.2;
+    }
+    
+    .titlecontact {
+        margin-top: 15px;
+        line-height: 1.7;
+    }
+    
+    #titlecontactleft, #titlecontactright {
+        display: none;
+    }
+    
+    .titletop {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 1.3em;
+        line-height: 1.6;
+        /*color:  #c0392b;*/
+    }
+    
+    h2 {
+        font-family: 'Roboto Slab';
+        font-size: 25px;
+        letter-spacing: .05cm;
+        font-weight: 500;
+        /*color: #2980b9;*/
+        color: #2980b9;
+    }
+    
+    .formation {
+        margin-bottom: 10px;
+    }
+    
+    .date {
+        font-weight: 200;
+        font-size: 11pt;
+    }
+    
+    .ecole {
+        font-weight: 700;
+    }
+    
+    .experience {
+        font-weight: 700;
+    }
+    
+    .exp {
+        margin-bottom: 10px;
+    }
+    
+    span {
+        display: inline-block;
+        margin-right: 4px;
+    }
+    
+    li {
+        list-style-type: square;
+    }
+    
+    .info {
+        padding-right: 20px;
+    }
+    
+    .space {
+        margin-top: 26px;
+    }
+    
+    .leftlang {
+        font-weight: bold;
+    }
+    
+    .space .info {
+        clear: both;
+        margin-top: 5px;
+    }
+    
+    h1 {
+        color: #2980b9;
+        /*text-shadow: 0 0 5pt #2ecc71;*/
+    }
+    
+    h2::after {
+        content: ' ';
+        display: block;
+        height: 1px;
+        background-image: linear-gradient(90deg, #2980b9, white);
+    }
+    
+    @media screen {
+    a, a:visited, a:hover {
+        color: #6E8A8D !important;
+        text-decoration: none;
+        border-bottom: 1pt dotted #6E8A8D;
+    }
+    }
+    
+    @media print {
+        a, a:visited, a:hover {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+        .atitle {
+            color: #c0392b;
+        }
+        #left {
+            line-height: 1.62;
+        }
+        #right {
+            line-height: 1.84;
+        }
+        .space .info {
+            margin-top: 5px;
+        }
+    }
+    
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: .05cm;
+    }
+    
+    .leftinfo, .leftlang, .ecole, .experience {
+        font-family: 'Lato';
+        /*color: #6CA0B8;*/
+        color: #c0392b;
+        font-size: 110%;
+        font-weight: 500;
+    }
+    
+    #cherche {
+        font-family: 'Roboto';
+        font-size: 18px;
+        background-color: #16a085;
+        color: white;
+        padding: .5em;
+        /*letter-spacing: 0.03cm;*/
+        word-spacing: .2em;
+        font-weight: 500;
+        text-align: center;
+    /*    text-transform: uppercase; */
+        border-radius: .3em;
+    }
+    
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+    
+    @media (min-width: 900px) {
+        .info {
+            margin-top: 0px;
+        }
+        #right {
+            line-height: 2.1;
+        }
+        #left {
+            line-height: 2.0;
+        }
+    }
+    
+    @media print, (min-width: 900px) {
+    
+    #page_wrap, #title {
+        width: 900px;
+        margin: 0 auto;
+    }
+    
+    #left {
+        float: left;
+        width: 42%;
+        padding-left: 0px;
+        padding-right: 0px;
+        box-sizing: border-box;
+    }
+    
+    #right { 
+        float: right;
+        width: 58%;
+        padding-left: 30px;
+        padding-right: 0px;
+        box-sizing: border-box;
+    }
+    
+    #contact {
+        display: none;
+    }
+    
+    #titlecontactleft, #titlecontactright {
+        margin-top: 1.5em;
+        display: inline;
+        font-size: 11pt;
+        line-height: 1.7;
+        color: #7f8c8d;
+    }
+    
+    #titlecontactleft {
+        float: left;
+        text-align: left;
+    }
+    
+    #titlecontactright {
+        float: right;
+        text-align: right;
+    }
+    
+    .web {
+        display: block;
+    }
+    /*
+    #right {
+        border-left: 1pt solid #16a085;;
+    }
+    
+    #title {
+        border-bottom: 1pt solid #16a085;;
+    }
+    */
+    }
+    `}</style>
+    </div>
   </Layout>
 )
