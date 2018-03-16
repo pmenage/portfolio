@@ -7,7 +7,7 @@ export default ({ children }) => (
         font-family: 'Roboto Slab', serif;
         letter-spacing: .05cm;
         font-size: 50px;
-        font-weight: 500;
+        font-weight: 300;
         text-align: center;
         margin: 1em;
         color: #34495e;

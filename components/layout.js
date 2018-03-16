@@ -12,7 +12,7 @@ export default ({ children, title = 'Home' }) => (
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC|Lato|Raleway" />
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700" />
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:200, 300, 400, 700" />
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" />
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300, 500" />
 
       <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossorigin="anonymous" />
       <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossorigin="anonymous" />
@@ -37,7 +37,7 @@ export default ({ children, title = 'Home' }) => (
           <ul className='pure-menu-list'>
             <li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
             <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
-            <li className='pure-menu-list'><Link href='/contact' as='/contact'><a className='pure-menu-link menu-link'>Contact</a></Link></li>
+            <li className='pure-menu-list'><Link href='/about' as='/about'><a className='pure-menu-link menu-link'>About</a></Link></li>
           </ul>
         </div>
         <style jsx>{`
@@ -119,7 +119,7 @@ export default ({ children, title = 'Home' }) => (
         <div className="pure-u-1 footer">
           <span><Link href='/'><a className='link'>Resume</a></Link></span>
           <span><Link href='/projects'><a className='link'>Work</a></Link></span>
-          <span><Link href='/contact' as='/contact'><a className='link'>Contact</a></Link></span>
+          <span><Link href='/about' as='/about'><a className='link'>About</a></Link></span>
         </div>
         <style jsx>{`
           .footer {

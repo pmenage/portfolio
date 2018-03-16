@@ -26,7 +26,7 @@ app.prepare()
           "message": req.body.message
         })
       })
-    res.redirect('/contact')
+    res.redirect('/about')
 
   })
 

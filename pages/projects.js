@@ -21,7 +21,7 @@ const Project = ({ title, image, slug, technologies, description, github }) => (
               ))
             }
           <div className='description'>{ description }</div>
-          <a target="_blank" href={ github } className='pure-button'>Github</a>
+          {github ? <a target="_blank" href={ github } className='pure-button'>Github</a> : null}
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@ const Project = ({ title, image, slug, technologies, description, github }) => (
         font-family: 'Roboto Slab', serif;
         letter-spacing: .03cm;
         font-size: 30px;
-        font-weight: 700;
+        font-weight: 500;
         color: #2c3e50;
       }
       div {
@@ -72,7 +72,7 @@ const Project = ({ title, image, slug, technologies, description, github }) => (
         color: #3498db;
         margin-right: 5px;
         font-size: 19px;
-        font-weight: 700;
+        font-weight: 500;
       }
       
       .description {

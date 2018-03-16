@@ -23,41 +23,120 @@ export default () => (
               
           <div className='titletop'>
               Software Engineering Student<br />
-              Microservices software developer intern
+              Pursuing a Master's Degree
           </div>
       
+          <div id='cherche'>
+              Looking for a 6-month internship starting February 2018
+          </div>
+    
         </div>
         
         <div id='page_wrap'>
         
-          <div id='left'>
-          
-            <div id='cherche'>
-                Looking for a 6-month internship starting February 2018
-            </div>
-        
-            <div className='space'>
-                <h2>Technologies</h2>
-                    <div className='info'><span className='leftinfo'>System</span><span className='rightinfo'>C, C++, Golang, Java, Java EE, Scheme, Python</span></div>
-                    <div className='info'><span className='leftinfo'>Cloud</span><span className='rightinfo'>Google Cloud Platform, Amazon Web Services, Docker, Kubernetes</span></div>
-                    <div className='info'><span className='leftinfo'>Web <span className='web'><small>(front-end)</small></span></span><span className='rightinfo'>HTML, CSS, JavaScript, jQuery, Bootstrap</span></div>
-                    <div className='info'><span className='leftinfo'>Web <span><small>(back-end)</small></span></span><span className='rightinfo'>PHP, MySQL, Node.js, MongoBD, Docker</span></div>
-                    <div className='info'><span className='leftinfo'>Methodology</span><span className='rightinfo'>Scrum, Kanban, Getting Things Done(GTD)</span></div>
-            </div>
-    
-            <div className='space'>
+          <div id='right'>
+            
+            <div>
+                <h2>Experience</h2>
+                
+                <div className='exp'>
+                    <div className='experience'>Software development internship</div>
+                    <div><a target='_blank' href='https://unacast.com'>Unacast</a> - Oslo, Norway <span className='date'>// June to September 2017</span></div>
+                    GCP, AWS, Kubernetes, Docker, Golang
+                    <ul>
+                        <li>Creation of a pipeline to transfer files from S3 to BigQuery</li>
+                        <li>Automation of tasks with a Slack chatbot</li>
+                        <li>Development of microservices from specification to production</li>
+                    </ul>
+                </div>
+                  
+                <div className='exp'>
+                    <div className='experience'>Dual business- and development-oriented internship</div>
+                    <div><a target='_blank' href='http://captiz.com/'>Captiz</a> - Bordeaux, France <span className='date'>// July – August 2016</span></div>
+                    <ul>
+                        <li>Developed a Node.js software module</li>
+                        <li>Negotiated contracts (11k€) and created marketing material</li>
+                    </ul>
+                </div>
+      
+              </div>
+              
+              <div>
                 <h2>Volunteering</h2>
                 <div className='exp'>
-                    <div className='experience'>President of a <a target='_blank' href='https://junior-aei.com/'>Junior-Enterprise</a></div>
+                    <div className='experience'>President of a <a className='atitle' target='_blank' href='https://junior-aei.com/'>Junior-Enterprise</a></div>
                     <div>Bordeaux, France</div>
-                    <div className='date'>April 2016 to April 2017</div>
+                    <div className='date'>April 2016 – April 2017</div>
                     <ul>
                         <li>Managed 23 collaborators</li>
                         <li>Established middle- and long-term strategies</li>
                         <li>Negotiated partnerships</li>
                     </ul>
                 </div>
-            </div>          
+            </div> 
+            
+            <div>
+                    <h2>Education</h2>
+                    <div>
+                        <div className='formation'>
+                            <div className='ecole'>Pursuing a Master's Degree in Software Engineering</div>
+                            <div>Bordeaux Graduate School of Engineering</div>
+                            <div><a target='_blank' href='https://enseirb-matmeca.bordeaux-inp.fr/en'>ENSEIRB-MATMECA</a>, Bordeaux, France <span className='date'>// 2015 – 2018</span></div>
+                        </div>
+                        <div className='formation'>
+                            <div className='ecole'>Intensive Math and Physics Course</div>
+                            <div>Preparation for the selective entrance into French graduate schools</div>
+                            <div><a target='_blank' href='http://www.lycee-saintlouis.fr/'>Lycée Saint-Louis</a>, Paris, France <span className='date'>// 2013 – 2015</span></div>
+                        </div>
+                        <div className='formation'>
+                            <div className='ecole'>International Option Baccalaureate (OIB)</div>
+                            <div>Equivalent to 'A' levels in math, physics, and science</div>
+                            <div><a target='_blank' href='http://www.ecolejeanninemanuel.org/en/public.html'>Ecole Jeannine Manuel</a> (international school), Paris, France <span className='date'>// 2013</span></div>
+                        </div>
+                        <div className='formation'>
+                            <div className='ecole'>Mooc Machine Learning</div>
+                            <div>Stanford University <span className='date'>// 2017</span></div>
+                        </div>
+                    </div>
+                </div>
+              
+          </div>
+          
+          <div id='left'>
+          
+            <div className='space'>
+              <h2>Projects</h2>
+              
+              <div className='exp'>
+                  <div className='experience'>3<sup>rd</sup> place in the Atos IT Challenge 2017</div>
+                  <ul>
+                      <li>Created a ticket selling mobile <a target='_blank' href='https://www.atositchallenge.net/edition-2017/'>app</a> based on the Ethereum blockchain</li>
+                  </ul>
+              </div>
+              
+              <div className='exp'>
+                  <div className='experience'>Application for an <a target='_blank' href='http://www.pulseo.fr/en'>incubator</a></div>
+                  <div>Created a responsive app to manage meetings and finances (Java EE, MySQL, JSF, Primefaces)</div>
+              </div>
+              
+              <div className='exp'>
+                  <div className='experience'>Open-source projects</div>
+                  <ul>
+                      <li>Video game (Java, Maven, Processing)</li>
+                      <li>Chatbot to get city bikes (Golang, Kubernetes)</li>
+                  </ul>
+              </div>
+                  
+            </div>
+          
+            <div className='space'>
+                <h2>Technologies</h2>
+                    <div className='info'><div className='leftinfo'>System</div><div>C, C++, Go, Java, Java EE, Scheme, Python, Android</div></div>
+                    <div className='info'><div className='leftinfo'>Cloud</div><div >Google Cloud Platform, Amazon Web Services, Docker, Kubernetes</div></div>
+                    <div className='info'><div className='leftinfo'>Big Data</div><div>Spark, Hadoop, HDFS, HBase</div>
+                    <div className='info'><div className='leftinfo'>Web <small>(front-end)</small></div><div>ReactJS, Angular, jQuery, Bootstrap</div></div>
+                    <div className='info'><div className='leftinfo'>Web <small>(back-end)</small></div><div >PHP, MySQL, Node.js, MongoBD, Docker</div></div>
+            </div>
             
             <div className='space'>
                 <h2>Languages</h2>
@@ -72,7 +151,6 @@ export default () => (
                             <li>Horseback riding <small>Galop&nbsp;7, contests</small></li>
                             <li>Piano <small>7 years</small></li>
                             <li>Debate club</li>
-                            <li>Science workshop facilitator</li>
                         </ul>
             </div>
             
@@ -87,7 +165,7 @@ export default () => (
                 
                 <div className='titlecontact'>
                     paulinemenage.com<br />
-                    github.com/pmenage<br />
+                    <a href="https://github.com/pmenage" target="_blank">github.com/pmenage</a><br />
                     +33 (0)6 45 47 42 43<br />
                     pauline.menage26@gmail.com
                 </div>
@@ -95,102 +173,16 @@ export default () => (
           
           </div>
       
-          <div id='right'>
-          
-             <div id='formation'>
-                <h2>Education</h2>
-                <div>
-                    <div className='formation'>
-                        <div className='ecole'>Pursuing a Master's Degree in Software Engineering</div>
-                        <div>Bordeaux Graduate School of Engineering</div>
-                        <div><a target='_blank' href='http://enseirb-matmeca.fr'>ENSEIRB-MATMECA</a>, Bordeaux, France</div>
-                        <div className='date'>Graduating in 2018</div>
-                    </div>
-                    <div className='formation'>
-                        <div className='ecole'>Intensive Math and Physics Course</div>
-                        <div>Preparation for the selective entrance into French graduate schools
-                        <div><a target='_blank' href='http://www.lycee-saintlouis.fr/'>Lycée Saint-Louis</a>, Paris, France</div>
-                        <div className='date'>2013 - 2015</div>
-                    </div>
-                    <div className='formation'>
-                        <div className='ecole'>International Option Baccalaureate (OIB)</div>
-                        <div>Equivalent to 'A' levels in math, physics, and science</div>
-                        <div>Ecole Jeannine Manuel - <a target='_blank' href='http://www.ecolejeanninemanuel.org/fr/'>EJM</a> (international school), Paris, France</div>
-                        <div className='date'>2013</div>
-                    </div>
-                    <div className='formation'>
-                        <div className='ecole'>Stanford University Machine Learning Mooc</div>
-                        <div>Supervised learning, unsupervised learning, neural networks</div>
-                        <div className='date'>2017</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <h2>Experience</h2>
-                
-                <div className='exp'>
-                    <div className='experience'>Software development internship</div>
-                    <div><a target='_blank' href='https://unacast.com'>Unacast</a> - Oslo, Norway <span className='date'>// June to September 2017</span></div>
-                    
-                    <ul>
-                        <li>Microservice development and deployment -<br />Go, Docker, Kubernets, AWS, GCP</li>
-                        <li>Creation of a central system for configuration</li>
-                        <li>Development of a Slack chatbot to automize tasks</li>
-                    </ul>
-                </div>
-                  
-                <div className='exp'>
-                    <div className='experience'>Dual business- and development-oriented internship</div>
-                    <div><a target='_blank' href='http://captiz.com/'>Captiz</a> - Bordeaux, France <span className='date'>// July to August 2016</span></div>
-                    <ul>
-                        <li>Developed a Node.js software module</li>
-                        <li>Found new clients and negotiated contracts (11k€)</li>
-                        <li>Created marketing material and videos</li>
-                    </ul>
-                </div>
-      
-              </div>
-              
-              <div>
-                  <h2>Technical Projects</h2>
-                  
-                  <div className='exp'>
-                      <div className='experience'>3rd place in the Atos IT Challenge 2017</div>
-                      <ul>
-                          <li>Ticket selling mobile <a target='_blank' href='https://www.atositchallenge.net/idea/e-tickets/'>app</a> based on the Ethereum blockchain</li>
-                      </ul>
-                  </div>
-                  
-                  <div className='exp'>
-                      <div className='experience'>Application for the incubator <a target='_blank' href='http://www.pulseo.fr/en'>Pulseo</a></div>
-                      <ul>
-                          <li>Responsive app to manage meetings and finances</li>
-                          <li>Year-long project in Java EE, MySQL, JSF, Primefaces</li>
-                      </ul>
-                  </div>
-                  
-                  <div className='exp'>
-                      <div className='experience'>Open-source projects</div>
-                      <ul>
-                          <li>Video game in Java, with Maven and Processing library</li>
-                          <li>Telegram chatbot to get city bicycles (Golang, Kubernetes)</li>
-                      </ul>
-                  </div>
-                  
-              </div>
-    
-          
-            </div>
-          </div>
         </div>
+
       </div>
       <style jsx>{`
         .body {
             font-family: Roboto;
             font-size: 12pt;
             line-height: 1.9;
-            color: #13131A;
+            /*color: #13131A; */
+            color: #2c3e50;
             padding: 1em;
             -webkit-print-color-adjust: exact;
         }
@@ -198,6 +190,7 @@ export default () => (
         #title {
             padding: 1em 1em;
             text-align: center;
+            /*border-bottom: solid 3px #16a085;*/
         }
         
         .exp ul {
@@ -224,17 +217,18 @@ export default () => (
         .titletop {
             margin-top: 25px;
             margin-bottom: 25px;
-            font-size: 1.15em;
+            font-size: 1.3em;
             line-height: 1.6;
+            /*color:  #c0392b;*/
         }
         
         h2 {
-            font-family: 'Lato';
-            text-transform: uppercase;
-            font-size: 1.3em;
-            letter-spacing: .8pt;
-            font-weight: 700;
-            color: #106FF6;
+            font-family: 'Roboto Slab';
+            font-size: 25px;
+            letter-spacing: .05cm;
+            font-weight: 500;
+            /*color: #2980b9;*/
+            color: #2980b9;
         }
         
         .formation {
@@ -272,7 +266,7 @@ export default () => (
         }
         
         .space {
-            margin-top: 20px;
+            margin-top: 26px;
         }
         
         .leftlang {
@@ -284,31 +278,42 @@ export default () => (
             margin-top: 5px;
         }
         
-        .leftinfo {
-            font-weight: bold;
-        }
-        
         h1 {
-            color: #106FF6;
-            text-shadow: 0 0 5pt #87E096;
+            color: #2980b9;
+            /*text-shadow: 0 0 5pt #2ecc71;*/
         }
         
         h2::after {
             content: ' ';
             display: block;
-            height: 1pt;
-            background-image: linear-gradient(90deg, #106FF6, white);
+            height: 1px;
+            background-image: linear-gradient(90deg, #2980b9, white);
         }
         
+        @media screen {
         a, a:visited, a:hover {
             color: #6E8A8D !important;
             text-decoration: none;
             border-bottom: 1pt dotted #6E8A8D;
         }
+        }
         
         @media print {
             a, a:visited, a:hover {
-                color: black;
+                text-decoration: none;
+                color: #2c3e50;
+            }
+            .atitle {
+                color: #c0392b;
+            }
+            #left {
+                line-height: 1.62;
+            }
+            #right {
+                line-height: 1.84;
+            }
+            .space .info {
+                margin-top: 5px;
             }
         }
         
@@ -319,17 +324,24 @@ export default () => (
         
         .leftinfo, .leftlang, .ecole, .experience {
             font-family: 'Lato';
-            color: #6CA0B8;
+            /*color: #6CA0B8;*/
+            color: #c0392b;
             font-size: 110%;
+            font-weight: 500;
         }
         
         #cherche {
-            background-color: #87E096;
+            font-family: 'Roboto';
+            font-size: 18px;
+            background-color: #16a085;
             color: white;
-            font-weight: bold;
-            padding: .2cm;
+            padding: .5em;
+            /*letter-spacing: 0.03cm;*/
+            word-spacing: .2em;
+            font-weight: 500;
             text-align: center;
-            text-transform: uppercase;
+        /*    text-transform: uppercase; */
+            border-radius: .3em;
         }
         
         @page {
@@ -337,29 +349,20 @@ export default () => (
             margin: 1cm;
         }
         
-        @media print {
-            .body {
-                font-size: 10pt;
+        @media (min-width: 900px) {
+            .info {
+                margin-top: 0px;
             }
-            #left {
+            #right {
                 line-height: 2.1;
             }
-            a {
-                border-bottom: none;
-            }
-            .space .info {
-                margin-top: 5px;
-            }
-        }
-        
-        @media (min-width: 900px) {
-            .space .info {
-                margin-top: 0px;
+            #left {
+                line-height: 2.0;
             }
         }
         
         @media print, (min-width: 900px) {
-            
+        
         #page_wrap, #title {
             width: 900px;
             margin: 0 auto;
@@ -367,22 +370,18 @@ export default () => (
         
         #left {
             float: left;
-            width: 38%;
+            width: 42%;
+            padding-left: 0px;
+            padding-right: 0px;
+            box-sizing: border-box;
+        }
+        
+        #right { 
+            float: right;
+            width: 58%;
             padding-left: 30px;
-            padding-right: 30px;
+            padding-right: 0px;
             box-sizing: border-box;
-        }
-        
-        #right {
-            float: left;
-            width: 62%;
-            padding-left: 60px;
-            padding-right: 10px;
-            box-sizing: border-box;
-        }
-        
-        #title {
-            border-bottom: solid 2px #1E1E1E;
         }
         
         #contact {
@@ -407,41 +406,18 @@ export default () => (
             text-align: right;
         }
         
-        #formation {
-            margin-top: 30px;
-        }
-        
-        .leftinfo {
-            width: 80px;   
-            margin-top: 0px;
-            text-align: right;
-            display: inline-block;
-            float: left;
-        }
-        
-        .rightinfo {
-            width: 140px;
-            margin-left: 30px;
-            margin-bottom: 10px;
-        }
-        
         .web {
             display: block;
         }
-        
+        /*
         #right {
-            border-left: 2pt solid #87E096;
+            border-left: 1pt solid #16a085;;
         }
         
         #title {
-            border-bottom: 2pt solid #87E096;
+            border-bottom: 1pt solid #16a085;;
         }
-        
-        #cherche {
-            border: 2pt solid #87E096;
-            border-top: none;
-        }
-        
+        */
         }
       `}</style>
     </div>

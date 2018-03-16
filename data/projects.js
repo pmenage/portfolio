@@ -29,15 +29,14 @@ const projects = [
     "slug": "volunteer",
     "technologies": ["AngularJS /", "Bootstrap /", "jQuery"],
     "description": "This is an app implemented in AngularJS and Bootstrap. Only the front-end is implemented for now, and special care was taken for the design.",
-    "github": "https://github.com/pmenage/volunteers",
+    "github": "https://github.com/pmenage/volunteers"
   },
   {
     "name": "Pulseo",
     "image": "/static/Pulseo.png",
     "slug": "pulseo",
     "technologies": ["Java EE /", "JSF /", "JDBC /", "MySQL"],
-    "description": "With a team, we created an application to help an incubator manage its startups. The application helps manage finances, meetings, and information on the startups. The goal was to help the incubator replace its Excel sheets by an app.",
-    "github": "https://github.com/pmenage/aei-website"
+    "description": "With a team, we created an application to help an incubator manage its startups. The application helps manage finances, meetings, and information on the startups. The goal was to help the incubator replace its Excel sheets by an app."
   },
   {
     "name": "Budgeting assistant",

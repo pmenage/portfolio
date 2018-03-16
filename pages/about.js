@@ -2,18 +2,18 @@ import Layout from '../components/layout'
 import H1 from '../components/h1'
 
 export default () => (
-  <Layout title="Contact">
+  <Layout title="About">
     <H1>About</H1>
 
     <div className='pure-g'>
 
       <div className='pure-u-sm-1 pure-u-md-1-2'>
         <div className='info'>
-          <img src='../static/photo.jpg' className='pure-img' />
+          <img src='../static/Pauline.jpg' className='pure-img image' />
           <div className='links'>
-            <a href='https://github.com/pmenage'>Github profile</a><br />
-            <a href='https://www.linkedin.com/in/pauline-m%C3%A9nage-030479109/'>Linkedin profile</a><br />
-            <a href='#'>Blog posts on medium</a>
+            <a href='https://github.com/pmenage' target="_blank">Github profile</a><br />
+            <a href='https://www.linkedin.com/in/pauline-m%C3%A9nage-030479109/' target="_blank">LinkedIn profile</a><br />
+            <a href='https://medium.com/@pauline.menage26' target="_blank">Medium blog posts</a>
           </div>
         </div>
       </div>
@@ -27,19 +27,20 @@ export default () => (
         </div>
       </div>
 
+    {/*
       <div className='pure-u-1'>
         <div className='contact-form'>
           <h2>Send me a message</h2>
           <form className='pure-form pure-form-aligned' action='/contactProcess' method='post'>
             <fieldset>
               <div className='pure-control-group'>
-                <input className='pure-input-2-3' id='name' name='name' type='text' placeholder='Your name' />
+                <input className='pure-input-1' id='name' name='name' type='text' placeholder='Your name' />
               </div>
               <div className="pure-control-group">
-                <input className='pure-input-2-3' id="email" name='email' type="email" placeholder='Your email' />
+                <input className='pure-input-1' id="email" name='email' type="email" placeholder='Your email' />
               </div>
               <div className='pure-control-group'>
-                <textarea className='pure-input-2-3' id='message' name='message' placeholder="You can write your message here, I'm looking forward to hear from you!" rows='10' />
+                <textarea className='pure-input-1' id='message' name='message' placeholder="You can write your message here, I'm looking forward to hearing from you!" rows='10' />
               </div>
               <button type='submit' className='pure-button pure-button-primary'>Send</button>
               
@@ -47,6 +48,7 @@ export default () => (
           </form>
         </div>
       </div>
+      */}
 
       <style jsx>{`
         .pure-g {
@@ -66,7 +68,7 @@ export default () => (
           text-decoration: none;
           font-family: 'Roboto Slab', serif;
           font-size: 20px;
-          font-weight: 700;
+          font-weight: 500;
         }
         .about {
           letter-spacing: normal;
@@ -75,6 +77,7 @@ export default () => (
           border-radius: 1em;
           background-color: #fff;
           color: #2c3e50;
+          margin-bottom: 5em;
         }
         .contact-form {
           letter-spacing: normal;
@@ -84,6 +87,9 @@ export default () => (
           margin: 1em;
           border-radius: 3em;
           text-align: center;
+        }
+        .pure-form input {
+          display: inline-block;
         }
         .contact-form button {
           margin-top: 2em;
@@ -102,7 +108,7 @@ export default () => (
           letter-spacing: .03cm;
           color: #16a085;
         }
-        img {
+        .image {
             display: block;
             margin: 0 auto;
             margin-top: 4em;
@@ -111,6 +117,19 @@ export default () => (
           border-radius: 100%;
           width: 15em;
         }
+        
+        @media only screen and (max-width: 568px) {
+          .pure-u-sm-1{
+            width: 100%
+          }
+        }
+        
+        @media only screen and (min-width: 568px) {
+          .contact-form {
+            padding: 2em 4em;
+          }
+        }
+        
         @media only screen and (min-width: 768px) {
           .about {
             line-height: 1.5em;
@@ -127,6 +146,12 @@ export default () => (
           }
           .info {
             margin-left: 4em;
+          }
+        }
+        
+        @media only screen and (min-width: 900px) {
+          .contact-form {
+            padding: 2em 8em;
           }
         }
         
