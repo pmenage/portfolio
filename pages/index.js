@@ -26,7 +26,7 @@ export default () => (
               Master's Degree
           </div>
       
-          <div id='cherche'>
+          <div id='looking'>
               Looking for a remote position starting September 2018
           </div>
     
@@ -103,6 +103,7 @@ export default () => (
                             <div>Equivalent to 'A' levels in math, physics, and science</div>
                             <div><a target='_blank' href='http://www.ecolejeanninemanuel.org/en/public.html'>Ecole Jeannine Manuel</a> (international school), Paris, France <span className='date'>// 2013</span></div>
                         </div>
+
                     </div>
                 </div>
               
@@ -225,7 +226,7 @@ export default () => (
             text-align: center;
         }
         
-        #cherche {
+        #looking {
             font-family: 'Roboto';
             font-size: 18px;
             font-weight: 500;
