@@ -6,9 +6,9 @@ export default () => (
       <div className='pure-u-1'>
         <div id='title'>
           <div id='titlecontactleft'>
-              Rés Gambetta, Bat A2, Apt 41<br />
-              19 Rue Roustaing<br />
-              33400 TALENCE<br />
+              Res Loustalot, Bat H1, Apt 89<br />
+              Rue de Loustalot<br />
+              33170 Gradignan<br />
               France
           </div>
     
@@ -22,12 +22,12 @@ export default () => (
           <h1>Pauline Ménage</h1>
               
           <div className='titletop'>
-              Software Engineering Student<br />
-              Pursuing a Master's Degree
+              Software Engineer<br />
+              Master's Degree
           </div>
       
           <div id='cherche'>
-              Looking for a 6-month internship starting February 2018
+              Looking for a remote position starting September 2018
           </div>
     
         </div>
@@ -40,8 +40,18 @@ export default () => (
                 <h2>Experience</h2>
                 
                 <div className='exp'>
-                    <div className='experience'>Software development internship</div>
-                    <div><a target='_blank' href='https://unacast.com'>Unacast</a> - Oslo, Norway <span className='date'>// June to September 2017</span></div>
+                    <div className='experience'>Software Engineering Intern</div>
+                    <div><a target='_blank' href='https://www.thermofisher.com'>Thermo Fisher Scientific</a> - Bordeaux, France <span className='date'>// February – August 2018</span></div>
+                    C#, .NET Core, SignalR, TypeScript, Angular
+                    <ul>
+                        <li>Development of realtime comments and annotations</li>
+                        <li>Research about collaborative text editing using CRDT and OT</li>
+                    </ul>
+                </div>
+                
+                <div className='exp'>
+                    <div className='experience'>Software Engineering Intern</div>
+                    <div><a target='_blank' href='https://unacast.com'>Unacast</a> - Oslo, Norway <span className='date'>// June – September 2017</span></div>
                     GCP, AWS, Kubernetes, Docker, Golang
                     <ul>
                         <li>Creation of a pipeline to transfer files from S3 to BigQuery</li>
@@ -51,7 +61,7 @@ export default () => (
                 </div>
                   
                 <div className='exp'>
-                    <div className='experience'>Dual business- and development-oriented internship</div>
+                    <div className='experience'>Business and Software Engineering Intern</div>
                     <div><a target='_blank' href='http://captiz.com/'>Captiz</a> - Bordeaux, France <span className='date'>// July – August 2016</span></div>
                     <ul>
                         <li>Developed a Node.js software module</li>
@@ -93,10 +103,6 @@ export default () => (
                             <div>Equivalent to 'A' levels in math, physics, and science</div>
                             <div><a target='_blank' href='http://www.ecolejeanninemanuel.org/en/public.html'>Ecole Jeannine Manuel</a> (international school), Paris, France <span className='date'>// 2013</span></div>
                         </div>
-                        <div className='formation'>
-                            <div className='ecole'>Mooc Machine Learning</div>
-                            <div>Stanford University <span className='date'>// 2017</span></div>
-                        </div>
                     </div>
                 </div>
               
@@ -109,14 +115,17 @@ export default () => (
               
               <div className='exp'>
                   <div className='experience'>3<sup>rd</sup> place in the Atos IT Challenge 2017</div>
-                  <ul>
-                      <li>Created a ticket selling mobile <a target='_blank' href='https://www.atositchallenge.net/edition-2017/'>app</a> based on the Ethereum blockchain</li>
-                  </ul>
+                  <div>Created a ticket selling mobile <a target='_blank' href='https://www.atositchallenge.net/edition-2017/'>app</a> based on the Ethereum blockchain</div>
               </div>
               
               <div className='exp'>
                   <div className='experience'>Application for an <a target='_blank' href='http://www.pulseo.fr/en'>incubator</a></div>
                   <div>Created a responsive app to manage meetings and finances (Java EE, MySQL, JSF, Primefaces)</div>
+              </div>
+              
+              <div className='exp'>
+                  <div className='experience'>Followed a Machine Learning MOOC</div>
+                  <div>Stanford University - 2017</div>
               </div>
               
               <div className='exp'>
@@ -131,7 +140,7 @@ export default () => (
           
             <div className='space'>
                 <h2>Technologies</h2>
-                    <div className='info'><div className='leftinfo'>System</div><div>C, C++, Go, Java, Java EE, Scheme, Python, Android</div></div>
+                    <div className='info'><div className='leftinfo'>System</div><div>C, Go, C#, .NET Core, Java, Python, Android</div></div>
                     <div className='info'><div className='leftinfo'>Cloud</div><div >Google Cloud Platform, Amazon Web Services, Docker, Kubernetes</div></div>
                     <div className='info'><div className='leftinfo'>Big Data</div><div>Spark, Hadoop, HDFS, HBase</div>
                     <div className='info'><div className='leftinfo'>Web <small>(front-end)</small></div><div>ReactJS, Angular, jQuery, Bootstrap</div></div>
@@ -176,33 +185,56 @@ export default () => (
         </div>
 
       </div>
+    </div>
       <style jsx>{`
         .body {
             font-family: Roboto;
             font-size: 12pt;
-            line-height: 1.9;
-            /*color: #13131A; */
             color: #2c3e50;
             padding: 1em;
             -webkit-print-color-adjust: exact;
         }
         
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 3em;
+            font-weight: 300;
+            color: #2980b9;
+            letter-spacing: .05cm;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab';
+            font-size: 25px;
+            font-weight: 500;
+            color: #2980b9;
+            letter-spacing: .05cm;
+        }
+        
+        h2::after {
+            content: ' ';
+            display: block;
+            height: 1px;
+            background-image: linear-gradient(90deg, #2980b9, white);
+        }
+        
         #title {
             padding: 1em 1em;
             text-align: center;
-            /*border-bottom: solid 3px #16a085;*/
         }
         
-        .exp ul {
-            margin-top: 5px;
-        }
-        
-        h1 {
-            font-size: 3em;
-            font-weight: 300;
-            margin-bottom: 0px;
-            margin-top: 0px;
-            line-height: 1.2;
+        #cherche {
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            word-spacing: .2em;
+            background-color: #16a085;
+            border-radius: .3em;
+            padding: .8em;
+            text-align: center;
         }
         
         .titlecontact {
@@ -219,16 +251,6 @@ export default () => (
             margin-bottom: 25px;
             font-size: 1.3em;
             line-height: 1.6;
-            /*color:  #c0392b;*/
-        }
-        
-        h2 {
-            font-family: 'Roboto Slab';
-            font-size: 25px;
-            letter-spacing: .05cm;
-            font-weight: 500;
-            /*color: #2980b9;*/
-            color: #2980b9;
         }
         
         .formation {
@@ -240,11 +262,7 @@ export default () => (
             font-size: 11pt;
         }
         
-        .ecole {
-            font-weight: 700;
-        }
-        
-        .experience {
+        .ecole, .experience {
             font-weight: 700;
         }
         
@@ -252,8 +270,11 @@ export default () => (
             margin-bottom: 10px;
         }
         
+        .exp ul {
+            margin-top: 5px;
+        }
+        
         span {
-            display: inline-block;
             margin-right: 4px;
         }
         
@@ -277,25 +298,25 @@ export default () => (
             clear: both;
             margin-top: 5px;
         }
-        
-        h1 {
-            color: #2980b9;
-            /*text-shadow: 0 0 5pt #2ecc71;*/
+
+        .leftinfo, .leftlang, .ecole, .experience {
+            font-family: 'Lato';
+            color: #c0392b;
+            font-size: 110%;
+            font-weight: 500;
         }
         
-        h2::after {
-            content: ' ';
-            display: block;
-            height: 1px;
-            background-image: linear-gradient(90deg, #2980b9, white);
+        @page {
+            size: A4;
+            margin: 1cm;
         }
         
         @media screen {
-        a, a:visited, a:hover {
-            color: #6E8A8D !important;
-            text-decoration: none;
-            border-bottom: 1pt dotted #6E8A8D;
-        }
+            a, a:visited, a:hover {
+                color: #6E8A8D !important;
+                text-decoration: none;
+                border-bottom: 1pt dotted #6E8A8D;
+            }
         }
         
         @media print {
@@ -317,38 +338,6 @@ export default () => (
             }
         }
         
-        h1 {
-            font-family: 'Roboto Slab', serif;
-            letter-spacing: .05cm;
-        }
-        
-        .leftinfo, .leftlang, .ecole, .experience {
-            font-family: 'Lato';
-            /*color: #6CA0B8;*/
-            color: #c0392b;
-            font-size: 110%;
-            font-weight: 500;
-        }
-        
-        #cherche {
-            font-family: 'Roboto';
-            font-size: 18px;
-            background-color: #16a085;
-            color: white;
-            padding: .5em;
-            /*letter-spacing: 0.03cm;*/
-            word-spacing: .2em;
-            font-weight: 500;
-            text-align: center;
-        /*    text-transform: uppercase; */
-            border-radius: .3em;
-        }
-        
-        @page {
-            size: A4;
-            margin: 1cm;
-        }
-        
         @media (min-width: 900px) {
             .info {
                 margin-top: 0px;
@@ -357,67 +346,57 @@ export default () => (
                 line-height: 2.1;
             }
             #left {
-                line-height: 2.0;
+                line-height: 1.96;
             }
         }
         
         @media print, (min-width: 900px) {
-        
-        #page_wrap, #title {
-            width: 900px;
-            margin: 0 auto;
-        }
-        
-        #left {
-            float: left;
-            width: 42%;
-            padding-left: 0px;
-            padding-right: 0px;
-            box-sizing: border-box;
-        }
-        
-        #right { 
-            float: right;
-            width: 58%;
-            padding-left: 30px;
-            padding-right: 0px;
-            box-sizing: border-box;
-        }
-        
-        #contact {
-            display: none;
-        }
-        
-        #titlecontactleft, #titlecontactright {
-            margin-top: 1.5em;
-            display: inline;
-            font-size: 11pt;
-            line-height: 1.7;
-            color: #7f8c8d;
-        }
-        
-        #titlecontactleft {
-            float: left;
-            text-align: left;
-        }
-        
-        #titlecontactright {
-            float: right;
-            text-align: right;
-        }
-        
-        .web {
-            display: block;
-        }
-        /*
-        #right {
-            border-left: 1pt solid #16a085;;
-        }
-        
-        #title {
-            border-bottom: 1pt solid #16a085;;
-        }
-        */
+            #page_wrap, #title {
+                width: 900px;
+                margin: 0 auto;
+            }
+            
+            #left {
+                float: left;
+                width: 42%;
+                padding-left: 0px;
+                padding-right: 0px;
+                box-sizing: border-box;
+            }
+            
+            #right { 
+                float: right;
+                width: 58%;
+                padding-left: 30px;
+                padding-right: 0px;
+                box-sizing: border-box;
+            }
+            
+            #contact {
+                display: none;
+            }
+            
+            #titlecontactleft, #titlecontactright {
+                margin-top: 1.5em;
+                display: inline;
+                font-size: 11pt;
+                line-height: 1.7;
+                color: #7f8c8d;
+            }
+            
+            #titlecontactleft {
+                float: left;
+                text-align: left;
+            }
+            
+            #titlecontactright {
+                float: right;
+                text-align: right;
+            }
+            
+            .web {
+                display: block;
+            }
         }
       `}</style>
     </div>
