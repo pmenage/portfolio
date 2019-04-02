@@ -6,7 +6,7 @@ export default ({ children, title = 'Home' }) => (
   <div>
 
     <Head>
-      <title>{ title }</title>
+      <title>{title}</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC|Lato|Raleway" />
@@ -14,8 +14,8 @@ export default ({ children, title = 'Home' }) => (
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:200, 300, 400, 700" />
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300, 500" />
 
-      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossOrigin="anonymous" />
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossOrigin="anonymous" />
       <style>{`
         body {
           background-color: #fff;
@@ -80,12 +80,12 @@ export default ({ children, title = 'Home' }) => (
               margin: 0 auto;
             }
           }
-          
+
         `}</style>
       </nav>
     </header>
 
-    { children }
+    {children}
 
     <footer>
       <div className='pure-g'>
@@ -93,20 +93,20 @@ export default ({ children, title = 'Home' }) => (
           <a href='../static/PaulineMenage.pdf' className='pure-button' download>Download resume</a>
         </div>
         <style jsx>{`
-      
+
           .pure-g {
             text-align: center;
             padding-top: 2em;
             border-top: 1px solid #bdc3c7;
           }
-          
+
           .pure-button {
             padding: 1.1em 1.4em 1.1em 1.4em;
             color: #fff;
             background-color: #d35400;
             border-radius: 1.8em;
           }
-          
+
           @media only screen and (min-width: 1000px) {
             .pure-g {
               width: 1000px;

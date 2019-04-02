@@ -17,7 +17,7 @@ export default () => (
           </div>
         </div>
       </div>
-      
+
       <div className='pure-u-sm-1 pure-u-md-1-2'>
         <div className='about'>
           <h2>About me</h2>
@@ -26,29 +26,6 @@ export default () => (
           <p>On my personal time, I enjoy horseback riding and playing the piano, and spend a lot of time doing sports. I am always ready to learn new skills and enjoy learning about everything.</p>
         </div>
       </div>
-
-    {/*
-      <div className='pure-u-1'>
-        <div className='contact-form'>
-          <h2>Send me a message</h2>
-          <form className='pure-form pure-form-aligned' action='/contactProcess' method='post'>
-            <fieldset>
-              <div className='pure-control-group'>
-                <input className='pure-input-1' id='name' name='name' type='text' placeholder='Your name' />
-              </div>
-              <div className="pure-control-group">
-                <input className='pure-input-1' id="email" name='email' type="email" placeholder='Your email' />
-              </div>
-              <div className='pure-control-group'>
-                <textarea className='pure-input-1' id='message' name='message' placeholder="You can write your message here, I'm looking forward to hearing from you!" rows='10' />
-              </div>
-              <button type='submit' className='pure-button pure-button-primary'>Send</button>
-              
-            </fieldset>
-          </form>
-        </div>
-      </div>
-      */}
 
       <style jsx>{`
         .pure-g {
@@ -117,19 +94,19 @@ export default () => (
           border-radius: 100%;
           width: 15em;
         }
-        
+
         @media only screen and (max-width: 568px) {
           .pure-u-sm-1{
             width: 100%
           }
         }
-        
+
         @media only screen and (min-width: 568px) {
           .contact-form {
             padding: 2em 4em;
           }
         }
-        
+
         @media only screen and (min-width: 768px) {
           .about {
             line-height: 1.5em;
@@ -148,13 +125,13 @@ export default () => (
             margin-left: 4em;
           }
         }
-        
+
         @media only screen and (min-width: 900px) {
           .contact-form {
             padding: 2em 8em;
           }
         }
-        
+
         @media only screen and (min-width: 1000px) {
           .pure-g {
             width: 1000px;
