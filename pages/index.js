@@ -6,28 +6,26 @@ export default () => (
       <div className='pure-u-1'>
         <div id='title'>
           <div id='titlecontactleft'>
-              Res Loustalot, Bat H1, Apt 89<br />
-              Rue de Loustalot<br />
-              33170 Gradignan<br />
+              66 Rue Denfert Rochereau<br />
+              92100 Boulogne-Billancourt<br />
               France
           </div>
 
           <div id='titlecontactright'>
               pauline.menage26@gmail.com<br />
               paulinemenage.com<br />
-              github.com/pmenage<br />
-              +33 (0)6 45 47 42 43
+              github.com/pmenage
           </div>
 
           <h1>Pauline Ménage</h1>
 
           <div className='titletop'>
-              Software Engineer<br />
-              Master's Degree
+              <div>Software Engineer</div>
+              <div>Master's Degree</div>
           </div>
 
           <div id='looking'>
-              Looking for a remote position starting September 2018
+              Looking for remote freelance opportunities
           </div>
 
         </div>
@@ -40,7 +38,7 @@ export default () => (
                 <h2>Experience</h2>
 
                 <div className='exp'>
-                    <div className='experience'>Software Engineering Intern</div>
+                    <div className='experience'>Software Engineer (intern then freelance)</div>
                     <div><a target='_blank' href='https://www.thermofisher.com'>Thermo Fisher Scientific</a> - Bordeaux, France <span className='date'>// February – August 2018</span></div>
                     C#, .NET Core, SignalR, TypeScript, Angular
                     <ul>
@@ -89,7 +87,7 @@ export default () => (
                     <h2>Education</h2>
                     <div>
                         <div className='formation'>
-                            <div className='ecole'>Pursuing a Master's Degree in Software Engineering</div>
+                            <div className='ecole'>Master's Degree in Software Engineering</div>
                             <div>Bordeaux Graduate School of Engineering</div>
                             <div><a target='_blank' href='https://enseirb-matmeca.bordeaux-inp.fr/en'>ENSEIRB-MATMECA</a>, Bordeaux, France <span className='date'>// 2015 – 2018</span></div>
                         </div>
@@ -252,6 +250,9 @@ export default () => (
             margin-bottom: 25px;
             font-size: 1.3em;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .formation {
