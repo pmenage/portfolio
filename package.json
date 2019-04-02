@@ -10,14 +10,14 @@
   "author": "Pauline Ménage",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "next": "^3.2.2",
-    "next-routes": "^1.0.24",
-    "node-fetch": "^1.6.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "next": "^8.0.4",
+    "next-routes": "^1.4.2",
+    "node-fetch": "^2.3.0",
     "pure-css": "^1.0.4",
-    "react": "^15.5.4",
-    "react-css-modules": "^4.2.0",
-    "react-dom": "^15.5.4"
+    "react": "^16.8.6",
+    "react-css-modules": "^4.7.9",
+    "react-dom": "^16.8.6"
   }
 }
