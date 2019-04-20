@@ -1,5 +1,0 @@
-
-RewriteEngine On
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !=paulinemenage.com
-RewriteRule (.*) https://paulinemenage.com%{REQUEST_URI} [R=permanent]
