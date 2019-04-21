@@ -305,8 +305,15 @@ export default () => (
             color: #2c3e50;
         }
 
+        @media print, (min-width: 970px) {
+            #title {
+                width: 900px;
+                margin: 0 auto;
+            }
+        }
+
         @media print, (min-width: 900px) {
-            #page_wrap, #title {
+            #page_wrap {
                 width: 900px;
                 margin: 0 auto;
             }
