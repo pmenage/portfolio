@@ -33,7 +33,6 @@ export default () => (
         <div id='page_wrap'>
 
           <div id='right'>
-
             <div>
                 <h2>Experience</h2>
 
@@ -59,6 +58,11 @@ export default () => (
                 </div>
 
                 <div className='exp'>
+                    <div className='experience'>3<sup>rd</sup> place in the Atos IT Challenge 2017</div>
+                    <div>Created a ticket selling mobile <a target='_blank' href='https://www.atositchallenge.net/edition-2017/'>app</a> based on the Ethereum blockchain</div>
+                </div>
+
+                <div className='exp'>
                     <div className='experience'>Business and Software Engineering Intern</div>
                     <div><a target='_blank' href='http://captiz.com/'>Captiz</a> - Bordeaux, France <span className='date'>// July – August 2016</span></div>
                     <ul>
@@ -68,20 +72,6 @@ export default () => (
                 </div>
 
               </div>
-
-              <div>
-                <h2>Volunteering</h2>
-                <div className='exp'>
-                    <div className='experience'>President of a <a className='atitle' target='_blank' href='https://junior-aei.com/'>Junior-Enterprise</a></div>
-                    <div>Bordeaux, France</div>
-                    <div className='date'>April 2016 – April 2017</div>
-                    <ul>
-                        <li>Managed 23 collaborators</li>
-                        <li>Established middle- and long-term strategies</li>
-                        <li>Negotiated partnerships</li>
-                    </ul>
-                </div>
-            </div>
 
             <div>
                     <h2>Education</h2>
@@ -108,19 +98,31 @@ export default () => (
           </div>
 
           <div id='left'>
+            <div>
+                <h2>Technologies</h2>
+                <div className='info'><div className='leftinfo'>Web <small>(front-end)</small></div><div>React, Angular, Vue, Bootstrap</div></div>
+                <div className='info'><div className='leftinfo'>Web <small>(back-end)</small></div><div >Node.js, PHP, MongoBD, MySQL, PostgreSQL</div></div>
+                <div className='info'><div className='leftinfo'>Mobile</div><div>React Native, Android</div>
+                <div className='info'><div className='leftinfo'>Cloud / Devops</div><div >Google Cloud Platform, Amazon Web Services, Docker, Kubernetes</div></div>
+                <div className='info'><div className='leftinfo'>System</div><div>C, Go, C#, .NET Core, Java, Python</div></div>
+            </div>
 
-            <div className='space'>
+            <div>
+                <h2>Volunteering</h2>
+                <div className='exp'>
+                    <div className='experience'>President of a <a className='atitle' target='_blank' href='https://junior-aei.com/'>Junior-Enterprise</a></div>
+                    <div>Bordeaux, France</div>
+                    <div className='date'>April 2016 – April 2017</div>
+                    <ul>
+                        <li>Managed 23 collaborators</li>
+                        <li>Established middle- and long-term strategies</li>
+                        <li>Negotiated partnerships</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
               <h2>Projects</h2>
-
-              <div className='exp'>
-                  <div className='experience'>3<sup>rd</sup> place in the Atos IT Challenge 2017</div>
-                  <div>Created a ticket selling mobile <a target='_blank' href='https://www.atositchallenge.net/edition-2017/'>app</a> based on the Ethereum blockchain</div>
-              </div>
-
-              <div className='exp'>
-                  <div className='experience'>Application for an <a target='_blank' href='http://www.pulseo.fr/en'>incubator</a></div>
-                  <div>Created a responsive app to manage meetings and finances (Java EE, MySQL, JSF, Primefaces)</div>
-              </div>
 
               <div className='exp'>
                   <div className='experience'>Followed a Machine Learning MOOC</div>
@@ -134,35 +136,25 @@ export default () => (
                       <li>Chatbot to get city bikes (Golang, Kubernetes)</li>
                   </ul>
               </div>
-
             </div>
 
-            <div className='space'>
-                <h2>Technologies</h2>
-                    <div className='info'><div className='leftinfo'>System</div><div>C, Go, C#, .NET Core, Java, Python, Android</div></div>
-                    <div className='info'><div className='leftinfo'>Cloud</div><div >Google Cloud Platform, Amazon Web Services, Docker, Kubernetes</div></div>
-                    <div className='info'><div className='leftinfo'>Big Data</div><div>Spark, Hadoop, HDFS, HBase</div>
-                    <div className='info'><div className='leftinfo'>Web <small>(front-end)</small></div><div>ReactJS, Angular, jQuery, Bootstrap</div></div>
-                    <div className='info'><div className='leftinfo'>Web <small>(back-end)</small></div><div >PHP, MySQL, Node.js, MongoBD, Docker</div></div>
-            </div>
-
-            <div className='space'>
+            <div>
                 <h2>Languages</h2>
                     <div className='info'><span className='leftlang'>French</span>- Mother tongue</div>
                     <div className='info'><span className='leftlang'>English</span>- Bilingual <small>(5 years in the USA)</small></div>
                     <div className='info'><span className='leftlang'>Spanish</span>- Good working knowledge</div>
             </div>
 
-            <div className='space'>
+            <div>
                 <h2>Interests</h2>
                         <ul>
-                            <li>Horseback riding <small>Galop&nbsp;7, contests</small></li>
+                            <li>Horseback riding <small>Galop&nbsp;7, competitions</small></li>
                             <li>Piano <small>7 years</small></li>
                             <li>Debate club</li>
                         </ul>
             </div>
 
-             <div className='space' id='contact'>
+             <div id='contact'>
                 <h2>Contact</h2>
                 <div className='titlecontact'>
                     66 Rue Denfert Rochereau<br />
@@ -188,6 +180,7 @@ export default () => (
             color: #2c3e50;
             padding: 1em;
             -webkit-print-color-adjust: exact;
+            line-height: 1.7;
         }
 
         h1 {
@@ -204,15 +197,9 @@ export default () => (
             font-family: 'Roboto Slab';
             font-size: 25px;
             font-weight: 500;
-            color: #2980b9;
+            color: #c0392b;
             letter-spacing: .05cm;
-        }
-
-        h2::after {
-            content: ' ';
-            display: block;
-            height: 1px;
-            background-image: linear-gradient(90deg, #2980b9, white);
+            margin-bottom: 5px;
         }
 
         #title {
@@ -234,7 +221,6 @@ export default () => (
 
         .titlecontact {
             margin-top: 15px;
-            line-height: 1.7;
         }
 
         #titlecontactleft, #titlecontactright {
@@ -249,6 +235,11 @@ export default () => (
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        #page_wrap {
+            display: flex;
+            flex-direction: column-reverse;
         }
 
         .formation {
@@ -284,24 +275,16 @@ export default () => (
             padding-right: 20px;
         }
 
-        .space {
-            margin-top: 26px;
-        }
-
         .leftlang {
             font-weight: bold;
         }
 
-        .space .info {
-            clear: both;
-            margin-top: 5px;
-        }
-
         .leftinfo, .leftlang, .ecole, .experience {
             font-family: 'Lato';
-            color: #c0392b;
+            color: #2980b9;
             font-size: 110%;
             font-weight: 500;
+            margin-bottom: 5px;
         }
 
         @page {
@@ -325,27 +308,6 @@ export default () => (
             .atitle {
                 color: #c0392b;
             }
-            #left {
-                line-height: 1.62;
-            }
-            #right {
-                line-height: 1.84;
-            }
-            .space .info {
-                margin-top: 5px;
-            }
-        }
-
-        @media (min-width: 900px) {
-            .info {
-                margin-top: 0px;
-            }
-            #right {
-                line-height: 2.1;
-            }
-            #left {
-                line-height: 1.96;
-            }
         }
 
         @media print, (min-width: 900px) {
@@ -354,8 +316,11 @@ export default () => (
                 margin: 0 auto;
             }
 
+            #page_wrap {
+                flex-direction: row;
+            }
+
             #left {
-                float: left;
                 width: 42%;
                 padding-left: 0px;
                 padding-right: 0px;
@@ -363,7 +328,6 @@ export default () => (
             }
 
             #right {
-                float: right;
                 width: 58%;
                 padding-left: 30px;
                 padding-right: 0px;
@@ -378,7 +342,6 @@ export default () => (
                 margin-top: 1.5em;
                 display: inline;
                 font-size: 11pt;
-                line-height: 1.7;
                 color: #7f8c8d;
             }
 
