@@ -120,8 +120,6 @@ export default () => (
                         <h3>Freelance Software Engineer</h3>
                         <div>January 2019 - present</div>
                         <ul>
-                            <li>Wynn <span className='date'>// Vue, GraphQL, Hasura</span></li>
-                            <li>Chaville <span className='date'>// WordPress Rest API, React, Redux</span></li>
                             <li>Uppiz <span className='date'>// Angular, Node.js</span></li>
                             <li>HoloMake <span className='date'>// React, Firebase, Google App Engine</span></li>
                         </ul>
@@ -196,7 +194,7 @@ export default () => (
       <style jsx>{`
         .body {
             font-family: Roboto;
-            font-size: 12pt;
+            font-size: 11pt;
             color: #2c3e50;
             padding: 1em;
             -webkit-print-color-adjust: exact;
@@ -229,7 +227,7 @@ export default () => (
         h3 {
             font-family: 'Lato';
             color: #2980b9;
-            font-size: 110%;
+            font-size: 12pt;
             font-weight: 500;
             margin: 5px 0;
         }
