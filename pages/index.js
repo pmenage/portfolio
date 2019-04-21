@@ -165,9 +165,8 @@ export default () => (
              <div className='space' id='contact'>
                 <h2>Contact</h2>
                 <div className='titlecontact'>
-                    Rés Gambetta, Bat A2, Apt 41<br />
-                    19 Rue Roustaing<br />
-                    33400 TALENCE<br />
+                    66 Rue Denfert Rochereau<br />
+                    92100 Boulogne-Billancourt<br />
                     France
                 </div>
 
@@ -178,11 +177,8 @@ export default () => (
                     pauline.menage26@gmail.com
                 </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </div>
       <style jsx>{`
