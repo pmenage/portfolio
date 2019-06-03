@@ -6,7 +6,7 @@ const Project = ({ title, image, technologies, description, github }) => (
 	<div className='main-pure-g'>
 		<div className='pure-u-sm-1 pure-u-md-1-2'>
 			<div className='image'>
-				<img src={image} className='pure-img' />
+				<img src={image} alt={title} className='pure-img' />
 			</div>
 		</div>
 		<div className='pure-u-sm-1 pure-u-md-1-2'>
