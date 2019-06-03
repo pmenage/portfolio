@@ -22,20 +22,20 @@ class Index extends React.Component {
           <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossOrigin="anonymous" />
           <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossOrigin="anonymous" />
           <style>{`
-        body {
-          background-color: #fff;
-          font-family: Roboto;
-        }
-        h1 {
-          font-family: 'Roboto Slab', serif;
-          letter-spacing: .05cm;
-          font-size: 50px;
-          font-weight: 300;
-          text-align: center;
-          margin: 1em;
-          color: #34495e;
-        }
-      `}</style>
+            body {
+              background-color: #fff;
+              font-family: Roboto;
+            }
+            h1 {
+              font-family: 'Roboto Slab', serif;
+              letter-spacing: .05cm;
+              font-size: 50px;
+              font-weight: 300;
+              text-align: center;
+              margin: 1em;
+              color: #34495e;
+            }
+          `}</style>
         </Head>
 
         <header>
