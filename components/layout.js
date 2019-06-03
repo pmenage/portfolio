@@ -13,8 +13,7 @@ class Index extends React.Component {
 
   render() {
     return (
-      <div>
-
+      <html lang="en">
         <Head>
           <title>{this.props.title ? this.props.title : 'Home'}</title>
           <meta charSet='utf-8' />
@@ -38,17 +37,17 @@ class Index extends React.Component {
             }
           `}</style>
         </Head>
-
-        <header>
-          <nav>
-            <div className='pure-menu pure-menu-horizontal'>
-              <ul className='pure-menu-list'>
-                <li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
-                <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
-                <li className='pure-menu-list'><Link href='/about' as='/about'><a className='pure-menu-link menu-link'>About</a></Link></li>
-              </ul>
-            </div>
-            <style jsx>{`
+        <body>
+          <header>
+            <nav>
+              <div className='pure-menu pure-menu-horizontal'>
+                <ul className='pure-menu-list'>
+                  <li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
+                  <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
+                  <li className='pure-menu-list'><Link href='/about' as='/about'><a className='pure-menu-link menu-link'>About</a></Link></li>
+                </ul>
+              </div>
+              <style jsx>{`
           .pure-menu {
             background-color: #fff;
             height: 6em;
@@ -90,17 +89,17 @@ class Index extends React.Component {
           }
 
         `}</style>
-          </nav>
-        </header>
+            </nav>
+          </header>
 
-        {this.props.children}
+          {this.props.children}
 
-        <footer>
-          <div className='pure-g'>
-            <div className='pure-u-1'>
-              <a href='../static/PaulineMenage.pdf' className='pure-button' download>Download resume</a>
-            </div>
-            <style jsx>{`
+          <footer>
+            <div className='pure-g'>
+              <div className='pure-u-1'>
+                <a href='../static/PaulineMenage.pdf' className='pure-button' download>Download resume</a>
+              </div>
+              <style jsx>{`
 
           .pure-g {
             text-align: center;
@@ -122,14 +121,14 @@ class Index extends React.Component {
             }
           }
         `}</style>
-          </div>
-          <div className="pure-g">
-            <div className="pure-u-1 footer">
-              <span><Link href='/'><a className='link'>Resume</a></Link></span>
-              <span><Link href='/projects'><a className='link'>Work</a></Link></span>
-              <span><Link href='/about' as='/about'><a className='link'>About</a></Link></span>
             </div>
-            <style jsx>{`
+            <div className="pure-g">
+              <div className="pure-u-1 footer">
+                <span><Link href='/'><a className='link'>Resume</a></Link></span>
+                <span><Link href='/projects'><a className='link'>Work</a></Link></span>
+                <span><Link href='/about' as='/about'><a className='link'>About</a></Link></span>
+              </div>
+              <style jsx>{`
           .footer {
             background-color: #34495e;
             margin-top: 2em;
@@ -144,10 +143,10 @@ class Index extends React.Component {
             color: #fff;
           }
         `}</style>
-          </div>
-        </footer>
-
-      </div >
+            </div>
+          </footer>
+        </body>
+      </html >
     )
   }
 }
