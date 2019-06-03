@@ -1,9 +1,8 @@
 import Layout from '../components/layout'
-import H1 from '../components/h1'
 
 export default () => (
   <Layout title="About">
-    <H1>About</H1>
+    <h1>About</h1>
 
     <div className='pure-g'>
 

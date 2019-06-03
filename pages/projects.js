@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import projects from '../data/projects'
-import H1 from '../components/h1'
 
 const Project = ({ title, image, technologies, description, github }) => (
   <div className='main-pure-g'>
@@ -137,7 +136,7 @@ const Project = ({ title, image, technologies, description, github }) => (
 const Projects = () => (
   <Layout title="Work">
 
-    <H1>My projects</H1>
+    <h1>My projects</h1>
     {
       projects.map((project, i) => (
         <Project

@@ -1,46 +1,53 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Fonts from './fonts'
 
-export default ({ children, title = 'Home' }) => (
+class Index extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-  <div>
+  componentDidMount() {
+    Fonts()
+  }
 
-    <Head>
-      <title>{title}</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC|Lato|Raleway" />
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700" />
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:200, 300, 400, 700" />
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300, 500" />
+  render() {
+    return (
+      <div>
 
-      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossOrigin="anonymous" />
-      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossOrigin="anonymous" />
-      <style>{`
+        <Head>
+          <title>{this.props.title ? this.props.title : 'Home'}</title>
+          <meta charSet='utf-8' />
+          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+          <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossOrigin="anonymous" />
+          <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossOrigin="anonymous" />
+          <style>{`
         body {
           background-color: #fff;
+          font-family: Roboto;
         }
         h1 {
-          font-family: Raleway;
+          font-family: 'Roboto Slab', serif;
+          letter-spacing: .05cm;
           font-size: 50px;
-          font-weight: 500;
+          font-weight: 300;
           text-align: center;
-          margin: 1.1em;
-          color: #16a085;
+          margin: 1em;
+          color: #34495e;
         }
       `}</style>
-    </Head>
+        </Head>
 
-    <header>
-      <nav>
-        <div className='pure-menu pure-menu-horizontal'>
-          <ul className='pure-menu-list'>
-            <li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
-            <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
-            <li className='pure-menu-list'><Link href='/about' as='/about'><a className='pure-menu-link menu-link'>About</a></Link></li>
-          </ul>
-        </div>
-        <style jsx>{`
+        <header>
+          <nav>
+            <div className='pure-menu pure-menu-horizontal'>
+              <ul className='pure-menu-list'>
+                <li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
+                <li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
+                <li className='pure-menu-list'><Link href='/about' as='/about'><a className='pure-menu-link menu-link'>About</a></Link></li>
+              </ul>
+            </div>
+            <style jsx>{`
           .pure-menu {
             background-color: #fff;
             height: 6em;
@@ -82,17 +89,17 @@ export default ({ children, title = 'Home' }) => (
           }
 
         `}</style>
-      </nav>
-    </header>
+          </nav>
+        </header>
 
-    {children}
+        {this.props.children}
 
-    <footer>
-      <div className='pure-g'>
-        <div className='pure-u-1'>
-          <a href='../static/PaulineMenage.pdf' className='pure-button' download>Download resume</a>
-        </div>
-        <style jsx>{`
+        <footer>
+          <div className='pure-g'>
+            <div className='pure-u-1'>
+              <a href='../static/PaulineMenage.pdf' className='pure-button' download>Download resume</a>
+            </div>
+            <style jsx>{`
 
           .pure-g {
             text-align: center;
@@ -114,14 +121,14 @@ export default ({ children, title = 'Home' }) => (
             }
           }
         `}</style>
-      </div>
-      <div className="pure-g">
-        <div className="pure-u-1 footer">
-          <span><Link href='/'><a className='link'>Resume</a></Link></span>
-          <span><Link href='/projects'><a className='link'>Work</a></Link></span>
-          <span><Link href='/about' as='/about'><a className='link'>About</a></Link></span>
-        </div>
-        <style jsx>{`
+          </div>
+          <div className="pure-g">
+            <div className="pure-u-1 footer">
+              <span><Link href='/'><a className='link'>Resume</a></Link></span>
+              <span><Link href='/projects'><a className='link'>Work</a></Link></span>
+              <span><Link href='/about' as='/about'><a className='link'>About</a></Link></span>
+            </div>
+            <style jsx>{`
           .footer {
             background-color: #34495e;
             margin-top: 2em;
@@ -136,8 +143,12 @@ export default ({ children, title = 'Home' }) => (
             color: #fff;
           }
         `}</style>
-      </div>
-    </footer>
+          </div>
+        </footer>
 
-  </div>
-)
+      </div >
+    )
+  }
+}
+
+export default Index;

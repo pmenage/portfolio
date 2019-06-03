@@ -12,6 +12,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "fontfaceobserver": "^2.1.0",
     "next": "^8.0.4",
     "next-routes": "^1.4.2",
     "node-fetch": "^2.3.0",
