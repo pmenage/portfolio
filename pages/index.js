@@ -62,7 +62,7 @@ export default () => (
 
                 <div className='experience'>
                     <h3>3<sup>rd</sup> place in the Atos IT Challenge 2017</h3>
-                    <div>Created a ticket selling mobile <a target='_blank' href='https://www.atositchallenge.net/edition-2017/'>app</a> based on the Ethereum blockchain</div>
+                    <div>Created a ticket selling mobile <a target='_blank' rel="noopener" href='https://www.atositchallenge.net/edition-2017/'>app</a> based on the Ethereum blockchain</div>
                 </div>
 
                 <div className='experience'>
@@ -174,17 +174,17 @@ export default () => (
                         <div>
                             <h3>Master's Degree in Software Engineering</h3>
                             <div>Bordeaux Graduate School of Engineering</div>
-                            <div><a target='_blank' href='https://enseirb-matmeca.bordeaux-inp.fr/en'>ENSEIRB-MATMECA</a>, Bordeaux, France <span className='date'>// 2015 – 2018</span></div>
+                            <div><a target='_blank' rel="noopener" href='https://enseirb-matmeca.bordeaux-inp.fr/en'>ENSEIRB-MATMECA</a>, Bordeaux, France <span className='date'>// 2015 – 2018</span></div>
                         </div>
                         <div>
                             <h3>Intensive Math and Physics Course</h3>
                             <div>Preparation for the selective entrance into French graduate schools</div>
-                            <div><a target='_blank' href='http://www.lycee-saintlouis.fr/'>Lycée Saint-Louis</a>, Paris, France <span className='date'>// 2013 – 2015</span></div>
+                            <div><a target='_blank' rel="noopener" href='http://www.lycee-saintlouis.fr/'>Lycée Saint-Louis</a>, Paris, France <span className='date'>// 2013 – 2015</span></div>
                         </div>
                         <div>
                             <h3>International Option Baccalaureate (OIB)</h3>
                             <div>Equivalent to 'A' levels in math, physics, and science</div>
-                            <div><a target='_blank' href='http://www.ecolejeanninemanuel.org/en/public.html'>Ecole Jeannine Manuel</a> (international school), Paris, France <span className='date'>// 2013</span></div>
+                            <div><a target='_blank' rel="noopener" href='http://www.ecolejeanninemanuel.org/en/public.html'>Ecole Jeannine Manuel</a> (international school), Paris, France <span className='date'>// 2013</span></div>
                         </div>
                     </div>
                 </div>
