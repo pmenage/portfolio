@@ -105,7 +105,7 @@ export default () => (
 
                     <div className='titlecontact'>
                         paulinemenage.com<br />
-                        <a href="https://github.com/pmenage" target="_blank">github.com/pmenage</a><br />
+                        <a href="https://github.com/pmenage" rel="noopener" target="_blank">github.com/pmenage</a><br />
                         +33 (0)6 45 47 42 43<br />
                         pauline.menage26@gmail.com
                     </div>

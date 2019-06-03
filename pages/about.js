@@ -10,9 +10,9 @@ export default () => (
 				<div className='info'>
 					<img src='../static/Pauline.jpg' className='pure-img image' />
 					<div className='links'>
-						<a href='https://github.com/pmenage' target="_blank">Github profile</a><br />
-						<a href='https://www.linkedin.com/in/pauline-m%C3%A9nage-030479109/' target="_blank">LinkedIn profile</a><br />
-						<a href='https://medium.com/@pauline.menage26' target="_blank">Medium blog posts</a>
+						<a href='https://github.com/pmenage' rel="noopener" target="_blank">Github profile</a><br />
+						<a href='https://www.linkedin.com/in/pauline-m%C3%A9nage-030479109/' rel="noopener" target="_blank">LinkedIn profile</a><br />
+						<a href='https://medium.com/@pauline.menage26' rel="noopener" target="_blank">Medium blog posts</a>
 					</div>
 				</div>
 			</div>

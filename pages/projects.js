@@ -19,7 +19,7 @@ const Project = ({ title, image, technologies, description, github }) => (
 						))
 					}
 					<div className='description'>{description}</div>
-					{github ? <a target="_blank" href={github} className='pure-button'>Github</a> : null}
+					{github ? <a rel="noopener" target="_blank" href={github} className='pure-button'>Github</a> : null}
 				</div>
 			</div>
 		</div>
