@@ -19,6 +19,7 @@ class Index extends React.Component {
           <title>{this.props.title ? this.props.title : 'Home'}</title>
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+          <meta name='description' content="Pauline's portfolio" />
           <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossOrigin="anonymous" />
           <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossOrigin="anonymous" />
           <style>{`
