@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import projects from '../data/projects'
 
-const Project = ({ title, image, technologies, description, github }) => (
+const Project = ({ title, image, technologies, description, github, website }) => (
 	<div className='main-pure-g'>
 		<div className='pure-u-sm-1 pure-u-md-1-2'>
 			<div className='image'>
@@ -19,7 +19,8 @@ const Project = ({ title, image, technologies, description, github }) => (
 						))
 					}
 					<div className='description'>{description}</div>
-					{github ? <a rel="noopener" target="_blank" href={github} className='pure-button'>Github</a> : null}
+					{github && <a rel="noopener" target="_blank" href={github} className='pure-button github-button'>Github</a>}
+					{website && <a rel="noopener" target="_blank" href={website} className='pure-button'>Website</a>}
 				</div>
 			</div>
 		</div>
@@ -75,6 +76,10 @@ const Project = ({ title, image, technologies, description, github }) => (
 				color: #fff;
 			}
 
+			.github-button {
+				margin-right: 20px;
+			}
+
 			@media only screen and (min-width: 768px) {
 				.image {
 				padding: 2em 1em 2em 2em;
@@ -122,7 +127,8 @@ const Projects = () => (
 					image={project.image}
 					technologies={project.technologies}
 					description={project.description}
-					github={project.github}>
+					github={project.github}
+					website={project.website}>
 				</Project>
 			))
 		}

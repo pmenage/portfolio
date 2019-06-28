@@ -5,7 +5,8 @@ const projects = [
     slug: "uppiz",
     technologies: ["Angular /", "Node.js /", "MySQL"],
     description:
-      "Uppiz organizes trips for people with disabilities. This website lets people sign up as users, place owners or companions to help people organize their trip effectively."
+      "Uppiz organizes trips for people with disabilities. This website lets people sign up as users, place owners or companions to help people organize their trip effectively.",
+    website: "https://uppiz.com"
   },
   {
     name: "HoloMake",
@@ -22,7 +23,8 @@ const projects = [
     technologies: ["WordPress /", "Bootstrap /", "PHP"],
     description:
       "This website was created for the Junior-Enterprise of which I was president. The goal was to create a simple website, easily maintainable by all collaborators. I created a custom theme, to make the website unique.",
-    github: "https://github.com/pmenage/aei-website"
+    github: "https://github.com/pmenage/aei-website",
+    website: "https://junior-aei.com"
   },
   {
     name: "Bumple game",
@@ -49,7 +51,8 @@ const projects = [
     technologies: ["AngularJS /", "Bootstrap /", "jQuery"],
     description:
       "This is an app implemented in AngularJS and Bootstrap. Only the front-end is implemented for now, and special care was taken for the design.",
-    github: "https://github.com/pmenage/volunteers"
+    github: "https://github.com/pmenage/volunteering-app",
+    website: "https://pmenage.github.io/volunteering-app/"
   }
 ];
 
