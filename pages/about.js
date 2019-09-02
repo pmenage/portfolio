@@ -21,7 +21,7 @@ export default () => (
       <div className='pure-u-sm-1 pure-u-md-1-2'>
         <div className='about'>
           <h2>About me</h2>
-          <p>Hello, I am Pauline, a software engineering student completing my fifth year at Bordeaux Graduate School of Engineering, in Computer Science. I am passionate about computer science, and I spend most of my free time coding or reading about new technologies.</p>
+          <p>Hello, I am Pauline, a freelance software engineer. I have a Master's Degree in Computer Science, from Bordeaux Graduate School of Engineering.</p>
           <p>As president of a Junior-Enterprise in 2016-2017, I learned how to manage a team, and take responsibility for my actions and decisions.</p>
           <p>On my personal time, I enjoy horseback riding and playing the piano, and spend a lot of time doing sports. I am always ready to learn new skills and enjoy learning about everything.</p>
         </div>
