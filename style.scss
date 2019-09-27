@@ -1,0 +1,376 @@
+.resume {
+	.body {
+		font-family: Roboto;
+		font-size: 11pt;
+		color: #2c3e50;
+		padding: 1em;
+		-webkit-print-color-adjust: exact;
+		line-height: 1.7;
+	}
+
+	.row {
+		display: flex;
+	}
+
+	h1 {
+		font-family: "Roboto Slab", serif;
+		font-size: 3em;
+		font-weight: 300;
+		color: #2980b9;
+		letter-spacing: 0.05cm;
+		margin: 0;
+		line-height: 1.2;
+	}
+
+	h2 {
+		font-family: "Roboto Slab";
+		font-size: 25px;
+		font-weight: 500;
+		color: #c0392b;
+		letter-spacing: 0.05cm;
+		margin-bottom: 5px;
+	}
+
+	h3 {
+		font-family: "Lato";
+		color: #2980b9;
+		font-size: 12pt;
+		font-weight: 500;
+		margin: 5px 0;
+	}
+
+	#title {
+		padding: 1em 1em;
+		text-align: center;
+	}
+
+	#looking {
+		font-family: "Roboto";
+		font-size: 18px;
+		font-weight: 500;
+		color: white;
+		word-spacing: 0.2em;
+		background-color: #16a085;
+		border-radius: 0.3em;
+		padding: 0.8em;
+		text-align: center;
+	}
+
+	.titlecontact {
+		margin-top: 15px;
+	}
+
+	#titlecontactleft,
+	#titlecontactright {
+		display: none;
+	}
+
+	.titletop {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		font-size: 1.3em;
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#page_wrap {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.date {
+		font-weight: 200;
+		font-size: 11pt;
+	}
+
+	.experience ul {
+		margin-top: 5px;
+	}
+
+	li {
+		list-style-type: square;
+	}
+
+	.language {
+		align-items: center;
+	}
+
+	.language div {
+		margin: 0 0 -5px 4px;
+	}
+
+	@page {
+		size: A4;
+		margin: 1cm;
+	}
+
+	a,
+	a:visited,
+	a:hover {
+		text-decoration: none;
+		color: #2c3e50;
+	}
+
+	@media print, (min-width: 970px) {
+		#title {
+			width: 900px;
+			margin: 0 auto;
+		}
+	}
+
+	@media print, (min-width: 900px) {
+		#page_wrap {
+			width: 900px;
+			margin: 0 auto;
+		}
+
+		#page_wrap {
+			flex-direction: row;
+		}
+
+		#left {
+			width: 42%;
+			padding-left: 0px;
+			padding-right: 0px;
+			box-sizing: border-box;
+		}
+
+		#right {
+			width: 58%;
+			padding-left: 30px;
+			padding-right: 0px;
+			box-sizing: border-box;
+		}
+
+		#contact {
+			display: none;
+		}
+
+		#titlecontactleft,
+		#titlecontactright {
+			display: inline;
+			font-size: 11pt;
+			color: #7f8c8d;
+		}
+
+		#titlecontactleft {
+			float: left;
+			text-align: left;
+		}
+
+		#titlecontactright {
+			float: right;
+			text-align: right;
+		}
+
+		.web {
+			display: block;
+		}
+	}
+}
+
+/* Projects */
+
+.projects {
+	.title {
+		font-family: "Roboto Slab", serif;
+		letter-spacing: 0.03cm;
+		font-size: 30px;
+		font-weight: 500;
+		color: #2c3e50;
+	}
+
+	div {
+		color: #34495e;
+	}
+
+	.pure-img {
+		box-shadow: 0 0 0.7em #bdc3c7;
+		position: relative;
+	}
+
+	.image {
+		padding: 1em;
+	}
+
+	.information {
+		padding: 1em;
+		text-align: center;
+	}
+
+	.tech {
+		margin-top: 1em;
+	}
+
+	.technology {
+		font-family: "Roboto Slab";
+		color: #3498db;
+		margin-right: 5px;
+		font-size: 19px;
+		font-weight: 500;
+	}
+
+	.description {
+		margin-top: 1em;
+		line-height: 1.4em;
+	}
+
+	.pure-button {
+		margin-top: 1.5em;
+		padding: 0.8em 1.5em 0.8em 1.5em;
+		border-radius: 1.8em;
+		background-color: #16a085;
+		color: #fff;
+	}
+
+	.github-button {
+		margin-right: 20px;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.image {
+			padding: 2em 1em 2em 2em;
+		}
+
+		.information {
+			padding: 2em 2em 2em 1em;
+			text-align: left;
+		}
+	}
+
+	@media only screen and (min-width: 1000px) {
+		.main-pure-g {
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		.title {
+			font-size: 30px;
+			padding-bottom: 0.3em;
+		}
+
+		.image {
+			padding: 2em;
+		}
+
+		.information {
+			padding: 2em;
+		}
+	}
+}
+
+/* About */
+
+.about {
+	.pure-g {
+		margin-bottom: 3em;
+	}
+	.links {
+		text-align: center;
+		margin-top: 3em;
+		line-height: 1.5;
+		letter-spacing: normal;
+	}
+	a,
+	a:visited,
+	a:hover {
+		color: #2980b9;
+		text-decoration: none;
+		font-family: "Roboto Slab", serif;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.about {
+		letter-spacing: normal;
+		line-height: 1.5em;
+		padding: 2em;
+		border-radius: 1em;
+		background-color: #fff;
+		color: #2c3e50;
+		margin-bottom: 5em;
+	}
+	.contact-form {
+		letter-spacing: normal;
+		background-color: #f8f8f8;
+		background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+		padding: 2em;
+		margin: 1em;
+		border-radius: 3em;
+		text-align: center;
+	}
+	.pure-form input {
+		display: inline-block;
+	}
+	.contact-form button {
+		margin-top: 2em;
+		padding: 1em 2.5em 1em 2.5em;
+		border-radius: 1.8em;
+		background-color: #16a085;
+		color: #fff;
+	}
+	.contact-form h2 {
+		color: #16a085;
+	}
+	h2 {
+		font-family: "Roboto Slab", serif;
+		font-size: 30px;
+		font-weight: 500;
+		letter-spacing: 0.03cm;
+		color: #16a085;
+	}
+	.image {
+		display: block;
+		margin: 0 auto;
+		margin-top: 4em;
+	}
+	.pure-img {
+		border-radius: 100%;
+		width: 15em;
+	}
+
+	@media only screen and (max-width: 568px) {
+		.pure-u-sm-1 {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (min-width: 568px) {
+		.contact-form {
+			padding: 2em 4em;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		.about {
+			line-height: 1.5em;
+			padding: 1em 0em 1em 1em;
+			border-radius: 1em;
+			margin-right: 4em;
+			background-color: #fff;
+			color: #2c3e50;
+		}
+		.contact-form {
+			letter-spacing: normal;
+			margin: 4em;
+			background-color: none;
+		}
+		.info {
+			margin-left: 4em;
+		}
+	}
+
+	@media only screen and (min-width: 900px) {
+		.contact-form {
+			padding: 2em 8em;
+		}
+	}
+
+	@media only screen and (min-width: 1000px) {
+		.pure-g {
+			width: 1000px;
+			margin: 0 auto;
+		}
+	}
+}
