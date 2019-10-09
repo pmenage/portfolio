@@ -38,8 +38,7 @@ export default () => (
                                 <h2>Technologies</h2>
                                 <div><h3>Web <small>(front-end)</small></h3><div>React, Angular, Vue, Bootstrap</div></div>
                                 <div><h3>Web <small>(back-end)</small></h3><div >Node.js, PHP, MongoBD, MySQL, PostgreSQL</div></div>
-                                <div><h3>Mobile</h3><div>React Native, Android</div></div>
-                                <div><h3>Cloud / Devops</h3><div >Google Cloud Platform, Amazon Web Services, Docker, Kubernetes</div></div>
+                                <div><h3>Cloud / Devops</h3><div >GCP, AWS, Docker, Kubernetes</div></div>
                                 <div><h3>System</h3><div>C, Go, C#, .NET Core, Java, Python</div></div>
                             </div>
 
@@ -48,8 +47,7 @@ export default () => (
                                 <div className='experience'>
                                     <h3>President of a Junior-Enterprise - AEI</h3>
                                     <div className='row'>
-                                        <div>Bordeaux, France</div>
-                                        <div className='date'>// April 2016 – April 2017</div>
+                                        <div>Bordeaux, France <span className='date'>// April 2016 – April 2017</span></div>
                                     </div>
                                     <ul>
                                         <li>Managed 23 collaborators</li>
@@ -70,6 +68,11 @@ export default () => (
                                 <div className='experience'>
                                     <h3>Followed a Machine Learning MOOC</h3>
                                     <div>Stanford University - 2017</div>
+                                </div>
+
+                                <div className='experience'>
+                                    <h3>Sopra Steria - app to unify dev environment</h3>
+                                    <div>Java, Spring Framework, React</div>
                                 </div>
 
                                 <div className='experience'>
@@ -118,52 +121,57 @@ export default () => (
                                 <h2>Experience</h2>
 
                                 <div className='experience'>
-                                    <h3>Freelance Software Engineer</h3>
-                                    <div>January 2019 - present</div>
+                                    <h3>Freelance Full Stack Developer</h3>
+                                    <div><span className='experience-title'>The Walking Nerds - Remote</span> <span className='date'>// Since January 2019</span></div>
                                     <ul>
-                                        <li>Uppiz <span className='date'>// Angular, Node.js</span></li>
-                                        <li>HoloMake <span className='date'>// React, Firebase, Google App Engine</span></li>
+                                        <li>Resiliency - Event Simulation <span className='date'>// React, Redux, Node.js, AdonisJS</span></li>
+                                        <li>Chaville City Hall - Map <span className='date'>// WP REST API, React, Redux, Mapbox</span></li>
+                                        <li>Wynn - Chat app <span className='date'>// Vue.js, GraphQL, Hasura, PassportJS</span></li>
+                                        <li>Uppiz - Trips for people with disabilities <span className='date'>// Angular, Node.js</span></li>
+                                    </ul>
+                                    <div><span className='experience-title'>HoloMake - Remote</span> <span className='date'>// December 2018</span></div>
+                                    <ul>
+                                        <li>Authentication system <span className='date'>// React, Firebase, Google App Engine</span></li>
                                     </ul>
                                 </div>
 
                                 <div className='experience'>
-                                    <h3>Mentor and course creator - OpenClassrooms</h3>
-                                    <div>January 2019 - present</div>
+                                    <h3>Freelance Mentor and Trainer</h3>
+                                    <div><span className='experience-title'>Lithan - Singapore, Remote</span> <span className='date'>// October 2019</span></div>
+                                    <ul>
+                                        <li>4-day Java and OOP bootcamp - 70 students</li>
+                                    </ul>
+                                    <div><span className='experience-title'>On-site week-long (35 hours) training - Lyon, France</span> <span className='date'>// June 2019</span></div>
+                                    <ul>
+                                        <li>JavaScript, Node.js, Angular, React, Bootstrap - 5 students</li>
+                                    </ul>
+                                    <div><span className='experience-title'>OpenClassrooms - Remote</span> <span className='date'>// Since December 2018</span></div>
                                     <ul>
                                         <li>Course creator <span className='date'>// Visual Studio and unit testing</span></li>
                                         <li>Mentor <span className='date'>// HTML, CSS, PHP, JavaScript, MySQL</span></li>
                                         <li>Technical proofreader <span className='date'>// ASP.NET Core</span></li>
                                     </ul>
+
                                 </div>
 
                                 <div className='experience'>
-                                    <h3>Software Engineer - Thermo Fisher Scientific</h3>
-                                    <div>Bordeaux, France <span className='date'>// February – December 2018</span></div>
+                                    <h3>Full Stack Developer and Product Owner (intern then freelance)</h3>
+                                    <div><span className='experience-title'>Thermo Fisher Scientific - Bordeaux, France</span> <span className='date'>// February – December 2018</span></div>
                                     <div>Angular, .NET Core, PostgreSQL, Docker, Kubernetes</div>
                                     <ul>
-                                        <li>Developed realtime comments and annotations</li>
+                                        <li>Developed realtime collaboration components</li>
                                         <li>Created a file sharing functionality</li>
-                                        <li>Deployed the website with Docker and Kubernetes</li>
                                     </ul>
                                 </div>
 
                                 <div className='experience'>
-                                    <h3>Software Engineer - Unacast</h3>
-                                    <div>Oslo, Norway <span className='date'>// June – September 2017</span></div>
-                                    GCP, AWS, Kubernetes, Docker, Golang
+                                    <h3>Back-End Developer</h3>
+                                    <div><span className='experience-title'>Unacast - Oslo, Norway</span> <span className='date'>// June – September 2017</span></div>
+                                    <div>GCP, AWS, Kubernetes, Docker, Golang</div>
                                     <ul>
                                         <li>Created a pipeline to transfer files from S3 to BigQuery</li>
                                         <li>Automated tasks with a Slack chatbot</li>
                                         <li>Developed microservices from specification to production</li>
-                                    </ul>
-                                </div>
-
-                                <div className='experience'>
-                                    <h3>Software and business intern - Captiz</h3>
-                                    <div>Bordeaux, France <span className='date'>// July – August 2016</span></div>
-                                    <ul>
-                                        <li>Developed a Node.js software module</li>
-                                        <li>Negotiated contracts (11k€) and created marketing material</li>
                                     </ul>
                                 </div>
                             </div>
