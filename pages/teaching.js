@@ -27,7 +27,7 @@ const Training = ({ name, role, date, technologies, description }) => (
 )
 
 const Trainings = () => (
-    <Layout title="Training">
+    <Layout title="Teaching">
 
         <h1>Teaching</h1>
         <div className='trainings'>
