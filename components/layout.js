@@ -42,6 +42,7 @@ class Index extends React.Component {
 								<ul className='pure-menu-list'>
 									<li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
 									<li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
+									<li className='pure-menu-list'><Link href='/teaching'><a className='pure-menu-link menu-link'>Teaching</a></Link></li>
 									<li className='pure-menu-list'><Link href='/about' as='/about'><a className='pure-menu-link menu-link'>About</a></Link></li>
 								</ul>
 							</div>
@@ -86,6 +87,12 @@ class Index extends React.Component {
 									}
 								}
 
+								@media screen and (max-width: 430px) {
+									.menu-link {
+										font-size: 18px;
+										padding: 10px;
+									}
+								}
 							`}</style>
 						</nav>
 					</header>
@@ -123,6 +130,7 @@ class Index extends React.Component {
 							<div className="pure-u-1 footer">
 								<span><Link href='/'><a className='link'>Resume</a></Link></span>
 								<span><Link href='/projects'><a className='link'>Work</a></Link></span>
+								<span><Link href='/teaching'><a className='link'>Teaching</a></Link></span>
 								<span><Link href='/about' as='/about'><a className='link'>About</a></Link></span>
 							</div>
 							<style jsx>{`
@@ -139,9 +147,18 @@ class Index extends React.Component {
 									text-decoration: none;
 									color: #fff;
 								}
+								@media screen and (max-width: 430px) {
+									.link {
+										font-size: 14px;
+									}
+									span {
+										margin: 10px;
+									}
+								}
 							`}</style>
 						</div>
 					</footer>
+					<script src="https://kit.fontawesome.com/e957e9f284.js" crossorigin="anonymous"></script>
 				</body>
 			</html >
 		)

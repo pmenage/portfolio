@@ -45,8 +45,8 @@ const Projects = () => (
 					technologies={project.technologies}
 					description={project.description}
 					github={project.github}
-					website={project.website}>
-				</Project>
+					website={project.website}
+				/>
 			))
 		}
 	</Layout>
