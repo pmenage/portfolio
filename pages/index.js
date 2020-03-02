@@ -28,7 +28,7 @@ export default () => (
                         </div>
 
                         <div id='looking'>
-                            Looking for remote freelance opportunities
+                            Looking for remote opportunities
                         </div>
                     </div>
 
