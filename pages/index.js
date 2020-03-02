@@ -15,9 +15,9 @@ export default () => (
                         </div>
 
                         <div id='titlecontactright'>
-                            pauline.menage26@gmail.com<br />
-                            paulinemenage.com<br />
-                            github.com/pmenage
+                            <a href="https://paulinemenage.com">paulinemenage.com</a><br />
+                            <a href="https://github.com/pmenage" target="_blank">github.com/pmenage</a><br />
+                            <a href="https://www.linkedin.com/in/pauline-m%C3%A9nage-030479109/" target="_blank">Linkedin</a>
                         </div>
 
                         <h1>Pauline Ménage</h1>
@@ -37,9 +37,10 @@ export default () => (
                             <div>
                                 <h2>Technologies</h2>
                                 <div><h3>Web <small>(front-end)</small></h3><div>React, Angular, Vue, Bootstrap</div></div>
-                                <div><h3>Web <small>(back-end)</small></h3><div >Node.js, PHP, MongoBD, MySQL, PostgreSQL</div></div>
+                                <div><h3>Web <small>(back-end)</small></h3><div>Node.js, .NET Core, PHP</div></div>
+                                <div><h3>Databases</h3><div>MySQL, PostgreSQL, MongoBD</div></div>
                                 <div><h3>Cloud / Devops</h3><div >GCP, AWS, Docker, Kubernetes</div></div>
-                                <div><h3>System</h3><div>C, Go, C#, .NET Core, Java, Python</div></div>
+                                <div><h3>System</h3><div>C#, Go, C, Java</div></div>
                             </div>
 
                             <div>
@@ -122,12 +123,16 @@ export default () => (
 
                                 <div className='experience'>
                                     <h3>Freelance Full Stack Developer</h3>
-                                    <div><span className='experience-title'>The Walking Nerds - Remote</span> <span className='date'>// Since January 2019</span></div>
+                                    <div><span className='experience-title'>Apricity - Remote</span> <span className='date'>// November 2019 - February 2020</span></div>
+                                    <ul>
+                                        <li>Refactoring the back-end <span className='date'>// Node.js, NestJS, TypeScript, PostgreSQL</span></li>
+                                    </ul>
+                                    <div><span className='experience-title'>The Walking Nerds - Remote</span> <span className='date'>// December 2018 - November 2019</span></div>
                                     <ul>
                                         <li>Resiliency - Event Simulation <span className='date'>// React, Redux, Node.js, AdonisJS</span></li>
                                         <li>Chaville City Hall - Map <span className='date'>// WP REST API, React, Redux, Mapbox</span></li>
                                         <li>Wynn - Chat app <span className='date'>// Vue.js, GraphQL, Hasura, PassportJS</span></li>
-                                        <li>Uppiz - Trips for people with disabilities <span className='date'>// Angular, Node.js</span></li>
+                                        <li>Uppiz - Trips for people with disabilities <span className='date'>// Angular, Node.js, Google Maps</span></li>
                                     </ul>
                                     <div><span className='experience-title'>HoloMake - Remote</span> <span className='date'>// December 2018</span></div>
                                     <ul>
@@ -148,7 +153,7 @@ export default () => (
                                     <div><span className='experience-title'>OpenClassrooms - Remote</span> <span className='date'>// Since December 2018</span></div>
                                     <ul>
                                         <li>Course creator <span className='date'>// Visual Studio and unit testing</span></li>
-                                        <li>Mentor <span className='date'>// HTML, CSS, PHP, JavaScript, MySQL</span></li>
+                                        <li>Mentor and Assessor <span className='date'>// HTML, CSS, JavaScript...</span></li>
                                         <li>Technical proofreader <span className='date'>// ASP.NET Core</span></li>
                                     </ul>
 

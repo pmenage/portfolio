@@ -40,7 +40,7 @@ class Index extends React.Component {
 						<nav>
 							<div className='pure-menu pure-menu-horizontal'>
 								<ul className='pure-menu-list'>
-									<li className='pure-menu-list first-link'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
+									<li className='pure-menu-list'><Link href='/'><a className='pure-menu-link menu-link'>Resume</a></Link></li>
 									<li className='pure-menu-list'><Link href='/projects'><a className='pure-menu-link menu-link'>Work</a></Link></li>
 									<li className='pure-menu-list'><Link href='/teaching'><a className='pure-menu-link menu-link'>Teaching</a></Link></li>
 									<li className='pure-menu-list'><Link href='/about' as='/about'><a className='pure-menu-link menu-link'>About</a></Link></li>
@@ -158,7 +158,7 @@ class Index extends React.Component {
 							`}</style>
 						</div>
 					</footer>
-					<script src="https://kit.fontawesome.com/e957e9f284.js" crossorigin="anonymous"></script>
+					<script src="https://kit.fontawesome.com/e957e9f284.js" crossOrigin="anonymous"></script>
 				</body>
 			</html >
 		)

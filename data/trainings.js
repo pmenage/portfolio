@@ -1,5 +1,13 @@
 const trainings = [
   {
+    name: "OpenClassrooms",
+    role: "Assessor",
+    date: "Since October 2018",
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "PHP", "MySQL"],
+    description:
+      "Assessing students on the Web Developer path. Evaluated more than 35 oral presentations.",
+  },
+  {
     name: "Lithan - Singapore",
     role: "Java Trainer",
     date: "October 2019",
@@ -13,7 +21,7 @@ const trainings = [
     date: "June 2019",
     technologies: ["Angular", "React", "Node.js", "Bootstrap"],
     description:
-      "Trained 5 developers for a company in Angular, React, Node.js and Bootstrap. Week-long on-site training (35 hours) and hands-on learning."
+      "Trained 5 developers for a company. Week-long on-site training (35 hours) and hands-on learning."
   },
   {
     name: "OpenClassrooms",
@@ -35,9 +43,9 @@ const trainings = [
     name: "OpenClassrooms",
     role: "Mentor",
     date: "Since December 2018",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WordPress"],
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "PHP", "MySQL"],
     description:
-      "Mentoring students in French and in English on Junior Web Developer and Front-end Developer courses (HTML, CSS, WordPress, JavaScript, PHP, MySQL...).",
+      "Mentoring students in French and in English on Web Developer and Front-end Developer courses. 11 students, 200+ sessions",
   },
 ];
 
