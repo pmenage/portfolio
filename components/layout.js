@@ -20,7 +20,6 @@ class Index extends React.Component {
 					<link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700&display=swap" rel="stylesheet" />
 					<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossOrigin="anonymous" />
 					<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css" crossOrigin="anonymous" />
-					<!-- Hotjar Tracking Code for https://www.paulinemenage.com -->
 					<script>
 						(function(h,o,t,j,a,r){
 							h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
